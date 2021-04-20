@@ -3,8 +3,8 @@ import * as http from './index';
 function testWrongCodes(tester, skipStatusCode) {
   const statusCodes = [100, 200, 300, 400, 500];
   statusCodes
-    .filter(statusCode => statusCode !== skipStatusCode)
-    .forEach(statusCode => {
+    .filter((statusCode) => statusCode !== skipStatusCode)
+    .forEach((statusCode) => {
       expect(tester(statusCode)).toBe(false);
     });
 }

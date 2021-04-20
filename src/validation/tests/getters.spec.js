@@ -3,13 +3,13 @@ import { getFieldIsValid, getFieldMessages, getIsValid, getMessages } from '../g
 import toValidationResult from '../runner';
 
 const oddMessage = 'is odd number';
-const oddFn = value => value % 2 === 0;
+const oddFn = (value) => value % 2 === 0;
 
 const evenMessage = 'is odd number';
-const evenFn = value => value % 2 === 1;
+const evenFn = (value) => value % 2 === 1;
 
 const gt10Message = 'is greater than 10';
-const gt10fn = value => value > 10;
+const gt10fn = (value) => value > 10;
 
 const oddValidator = createValidator(oddMessage, oddFn);
 const evenValidator = createValidator(evenMessage, evenFn);

@@ -1,7 +1,7 @@
-const isNull = item => item === null;
-const isUndefined = item => item === undefined;
-const isObject = item => typeof item === 'object';
-const isPrimitiveObject = item => isObject(item) && !Array.isArray(item);
+const isNull = (item) => item === null;
+const isUndefined = (item) => item === undefined;
+const isObject = (item) => typeof item === 'object';
+const isPrimitiveObject = (item) => isObject(item) && !Array.isArray(item);
 
 function getValueAndMissingCards(value, availableVariables, selectors) {
   if (!value) {
@@ -28,7 +28,7 @@ function getValueAndMissingCards(value, availableVariables, selectors) {
       return token.value;
     }
 
-    const mapping = flattenVariables.find(option => option.label === token.value);
+    const mapping = flattenVariables.find((option) => option.label === token.value);
     return mapping && mapping.value;
   }
 
@@ -36,15 +36,17 @@ function getValueAndMissingCards(value, availableVariables, selectors) {
     .split(`\\${open}`)
     .join('%%%')
     .split(new RegExp(`(\\${open}[^\\${open}\\${close}]*[\\${close}]{0,1})`))
-    .filter(str => str !== '')
+    .filter((str) => str !== '')
     .map(defineToken);
 
   return {
     value: tokens.map(replaceWithTokenValue).join(''),
     tokens: tokens
-      .filter(token => token.wrapped)
-      .map(token => {
-        const referenceVariable = flattenVariables.find(variable => variable.label === token.value);
+      .filter((token) => token.wrapped)
+      .map((token) => {
+        const referenceVariable = flattenVariables.find(
+          (variable) => variable.label === token.value
+        );
         return {
           value: token.value,
           available: referenceVariable !== undefined,
@@ -67,7 +69,7 @@ const validate = (initialValue, validation) => {
 
     if (selectors) {
       ({ tokens, value } = getValueAndMissingCards(initialValue, variables, selectors));
-      const missingVars = tokens.filter(v => !v.available);
+      const missingVars = tokens.filter((v) => !v.available);
 
       if (missingVars.length) {
         const verb = missingVars.length === 1 ? 'was' : 'were';
@@ -75,11 +77,11 @@ const validate = (initialValue, validation) => {
 
         messages.push({
           active: true,
-          message: `${name} ${missingVars.map(v => v.value).join(', ')} ${verb} not found`,
+          message: `${name} ${missingVars.map((v) => v.value).join(', ')} ${verb} not found`,
         });
       }
 
-      const undefinedVars = tokens.filter(v => v.isUndefined === true);
+      const undefinedVars = tokens.filter((v) => v.isUndefined === true);
 
       if (undefinedVars.length) {
         const verb = undefinedVars.length === 1 ? 'has' : 'have';
@@ -87,14 +89,14 @@ const validate = (initialValue, validation) => {
 
         messages.push({
           active: true,
-          message: `${name} ${undefinedVars.map(v => v.value).join(', ')} ${verb} no value`,
+          message: `${name} ${undefinedVars.map((v) => v.value).join(', ')} ${verb} no value`,
         });
       }
 
-      const tokenValidators = validators.filter(validator => validator.appliesToTokens === true);
+      const tokenValidators = validators.filter((validator) => validator.appliesToTokens === true);
 
       if (tokenValidators.length) {
-        tokenValidators.forEach(validator => {
+        tokenValidators.forEach((validator) => {
           const { fn } = validator;
           const succeeded = fn(initialValue);
           if (!succeeded) {
@@ -133,7 +135,7 @@ const validate = (initialValue, validation) => {
         }
         messages[index].active = !succeeded;
       }
-      if (tokens.filter(token => !token.available).length) {
+      if (tokens.filter((token) => !token.available).length) {
         isValid = false;
       }
     });
@@ -149,7 +151,7 @@ const toValidationResult = (model = {}, validations = {}) => {
   const results = {};
   let isValid = true;
 
-  fields.forEach(field => {
+  fields.forEach((field) => {
     if (!isNull(model)) {
       const value = model[field];
       const validation = validations[field];

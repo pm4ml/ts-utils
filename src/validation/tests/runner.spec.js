@@ -2,13 +2,13 @@ import createValidation, { createOptionalValidation, createValidator } from '../
 import toValidationResult, { validate } from '../runner';
 
 const oddMessage = 'is odd number';
-const oddFn = value => typeof value === 'number' && value % 2 === 1;
+const oddFn = (value) => typeof value === 'number' && value % 2 === 1;
 
 const evenMessage = 'is even number';
-const evenFn = value => typeof value === 'number' && value % 2 === 0;
+const evenFn = (value) => typeof value === 'number' && value % 2 === 0;
 
 const gt10Message = 'is greater than 10';
-const gt10fn = value => value > 10;
+const gt10fn = (value) => value > 10;
 
 const oddValidator = createValidator(oddMessage, oddFn);
 const evenValidator = createValidator(evenMessage, evenFn);
@@ -29,7 +29,7 @@ describe('tests validating a value', () => {
 
   it('should result in a successfull validation', () => {
     const result = validate(21, testValidation);
-    const allInactiveWarnings = result.messages.every(w => w.active === false);
+    const allInactiveWarnings = result.messages.every((w) => w.active === false);
     expect(result.messages).toHaveLength(2);
     expect(allInactiveWarnings).toBe(true);
     expect(result.isValid).toBe(true);
@@ -46,7 +46,7 @@ describe('tests validating a value', () => {
 
   it('should result in a failed validation and produce active messages', () => {
     const result = validate(12, testValidation);
-    const allInactiveWarnings = result.messages.every(w => w.active === false);
+    const allInactiveWarnings = result.messages.every((w) => w.active === false);
     expect(allInactiveWarnings).toBe(false);
     expect(result.messages).toHaveLength(2);
     expect(result.messages[0]).toBeInstanceOf(Object);

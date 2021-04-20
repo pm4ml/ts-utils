@@ -5,7 +5,7 @@ const createValidator = (message, fn, appliesToTokens = false) => ({
   appliesToTokens,
 });
 
-const buildValidationCreator = isRequired => (validators, variables, selectors) => ({
+const buildValidationCreator = (isRequired) => (validators, variables, selectors) => ({
   isRequired,
   variables,
   selectors,

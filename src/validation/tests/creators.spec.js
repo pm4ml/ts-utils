@@ -1,7 +1,7 @@
 import createValidation, { createOptionalValidation, createValidator } from '../creators';
 
 const message = 'Test message';
-const fn = value => value % 2 === 0;
+const fn = (value) => value % 2 === 0;
 const testValidator = createValidator(message, fn);
 
 describe('tests the validator creator', () => {
@@ -31,8 +31,8 @@ describe('tests the validation creators', () => {
   });
 
   it('should build the validation array items correctly', () => {
-    const otherValidator = createValidator('other message', value => value > 0);
-    const customValidator = createValidator('custom message', value => value < 0);
+    const otherValidator = createValidator('other message', (value) => value > 0);
+    const customValidator = createValidator('custom message', (value) => value < 0);
     const validation = createValidation([testValidator, otherValidator, customValidator]);
     const { validators, isRequired } = validation;
     const [firstValidator, secondValidator, thirdValidator] = validators;
@@ -62,8 +62,8 @@ describe('tests the validation creators', () => {
   });
 
   it('should build the optional validation array items correctly', () => {
-    const otherValidator = createValidator('other message', value => value > 0);
-    const customValidator = createValidator('optional message', value => value < 0);
+    const otherValidator = createValidator('other message', (value) => value > 0);
+    const customValidator = createValidator('optional message', (value) => value < 0);
     const validation = createOptionalValidation([testValidator, otherValidator, customValidator]);
     const { validators, isRequired } = validation;
     const [firstValidator, secondValidator, thirdValidator] = validators;
