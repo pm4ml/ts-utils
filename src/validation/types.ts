@@ -7,7 +7,7 @@ export interface ValidationField {
   isValid: boolean;
   isRequired: boolean;
   messages: ValidationMessage[];
-  token: Object[];
+  token: unknown[];
   fields?: ValidationFields[];
 }
 
@@ -17,5 +17,5 @@ export interface ValidationResults {
   isValid: boolean;
   fields: ValidationFields;
   messages: ValidationMessage[];
-  token: Object[];
+  token: unknown[];
 }

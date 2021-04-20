@@ -70,7 +70,8 @@ const vd = {
   isPositive: createValidator('Must be positive', (value) => {
     if (value === undefined) {
       return true;
-    } else if (!Number.isNaN(value)) {
+    }
+    if (!Number.isNaN(value)) {
       return value >= 0;
     }
     return false;

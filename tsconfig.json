@@ -2,7 +2,10 @@
   "compilerOptions": {
     "lib": ["dom", "es2017", "es2018"],
     "baseUrl": "src",
+    "noUnusedLocals": true,
     "outDir": "lib",
+    "strict": true,
+    "noUnusedParameters": true,
     "noImplicitAny": true,
     "allowSyntheticDefaultImports": true,
     "esModuleInterop": true,
@@ -13,5 +16,5 @@
     "allowJs": true,
   },
   "include": ["src/**/*.ts"],
-  "exclude": ["node_modules", "lib"]
+  "exclude": ["node_modules", "lib", "**/*.spec.ts"]
 }

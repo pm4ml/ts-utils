@@ -22,4 +22,4 @@ const composeOptions = (sourceMaps: { [label: string]: string | number | boolean
   });
 };
 
-export { composeOption, composeOptions };
+export { composeClassName, composeOption, composeOptions };

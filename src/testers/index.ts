@@ -1,6 +1,6 @@
 import _isEqual from 'lodash/isEqual';
 
-type AnyValue = boolean | number | string | null | undefined | object;
+type AnyValue = boolean | number | string | null | undefined | Record<string, unknown>;
 
 const isDefined = (value: AnyValue): boolean => value !== undefined;
 

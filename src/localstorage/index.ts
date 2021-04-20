@@ -13,13 +13,15 @@ const setItem = (key: string, value: AnyType | JsonType) => {
 };
 
 const getItem = (key: string): AnyType | JsonType => {
+  const unparsed = localStorage.getItem(key);
+  if (!unparsed) {
+    return undefined;
+  }
   let parsed;
 
   try {
-    parsed = JSON.parse(localStorage.getItem(key));
+    parsed = JSON.parse(unparsed);
   } catch (e) {
-    // eslint-disable-next-line
-    // console.error(`Unable to read from storage "${key}"; The key will be removed. \nError: ${e}`);
     localStorage.removeItem(key);
   }
   return parsed;

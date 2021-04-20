@@ -1,6 +1,6 @@
 import * as http from './index';
 
-function testWrongCodes(tester, skipStatusCode) {
+function testWrongCodes(tester: (value: number) => boolean, skipStatusCode: number) {
   const statusCodes = [100, 200, 300, 400, 500];
   statusCodes
     .filter((statusCode) => statusCode !== skipStatusCode)
