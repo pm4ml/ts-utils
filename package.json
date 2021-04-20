@@ -5,9 +5,12 @@
   "license": "MIT",
   "types": "lib/index.d.ts",
   "files": [
-    "lib",
-    "lib/testers"
+    "lib/**/*"
   ],
+  "exports": {
+    ".": "./lib/index.js",
+    "./": "./lib/"
+  },
   "dependencies": {
     "lodash": "^4.17.21"
   },
