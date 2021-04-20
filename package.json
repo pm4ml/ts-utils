@@ -1,5 +1,5 @@
 {
-  "name": "ts-utils",
+  "name": "@modusbox/ts-utils",
   "version": "0.0.1",
   "main": "lib/index.js",
   "license": "MIT",
