@@ -1,30 +1,28 @@
 import _isEqual from 'lodash/isEqual';
 
-type AnyValue = boolean | number | string | null | undefined | Record<string, unknown>;
+const isDefined = (value: unknown): boolean => value !== undefined;
 
-const isDefined = (value: AnyValue): boolean => value !== undefined;
+const isUndefined = (value: unknown): boolean => value === undefined;
 
-const isUndefined = (value: AnyValue): boolean => value === undefined;
+const isEqual = (a: unknown, b: unknown): boolean => _isEqual(a, b);
 
-const isEqual = (a: AnyValue, b: AnyValue): boolean => _isEqual(a, b);
+const isNotEqual = (a: unknown, b: unknown): boolean => !_isEqual(a, b);
 
-const isNotEqual = (a: AnyValue, b: AnyValue): boolean => !_isEqual(a, b);
+const isNil = (value: unknown): boolean => value === undefined || value === null;
 
-const isNil = (value: AnyValue): boolean => value === undefined || value === null;
+const isNotNil = (value: unknown): boolean => value !== undefined && value !== null;
 
-const isNotNil = (value: AnyValue): boolean => value !== undefined && value !== null;
+const isNotEmptyCollection = (collection: unknown[]): boolean => collection.length > 0;
 
-const isNotEmptyCollection = (collection: AnyValue[]): boolean => collection.length > 0;
-
-const getAnyIs = (value: AnyValue) => (...args: AnyValue[]): boolean =>
+const getAnyIs = (value: unknown) => (...args: unknown[]): boolean =>
   args.some((arg) => arg === value);
 
-const getAllAre = (value: AnyValue) => (...args: AnyValue[]): boolean =>
+const getAllAre = (value: unknown) => (...args: unknown[]): boolean =>
   args.every((arg) => arg === value);
 
-const getAnyIsDefined = (...args: AnyValue[]): boolean => args.some(isDefined);
+const getAnyIsDefined = (...args: unknown[]): boolean => args.some(isDefined);
 
-const getAnyIsNotNil = (...args: AnyValue[]): boolean => args.some(isNotNil);
+const getAnyIsNotNil = (...args: unknown[]): boolean => args.some(isNotNil);
 
 export {
   getAnyIs,
