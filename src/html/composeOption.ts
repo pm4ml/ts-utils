@@ -1,6 +1,6 @@
-import { OptionValue } from './types';
+import { OptionValue, Option } from './types';
 
-function composeOption(label: string, value: OptionValue) {
+function composeOption(label: string, value: OptionValue): Option {
   return {
     label,
     value,
