@@ -14,8 +14,8 @@ import is50x from './is50x';
 function testWrongCodes(tester, skipStatusCode) {
   const statusCodes = [100, 200, 300, 400, 500];
   statusCodes
-    .filter(statusCode => statusCode !== skipStatusCode)
-    .forEach(statusCode => {
+    .filter((statusCode) => statusCode !== skipStatusCode)
+    .forEach((statusCode) => {
       expect(tester(statusCode)).toBe(false);
     });
 }
