@@ -1,5 +1,6 @@
 {
   "compilerOptions": {
+    "declarationMap": true,
     "lib": ["dom", "es2017", "es2018"],
     "baseUrl": "src",
     "noUnusedLocals": true,

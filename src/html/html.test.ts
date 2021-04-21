@@ -1,15 +1,16 @@
-import * as html from './index';
+import composeOption from './composeOption';
+import composeOptions from './composeOptions';
 
-describe('tests the HTML utility methods', () => {
+describe('tests the composeOption(s) utility methods', () => {
   it('Should build the correct pair', () => {
-    expect(html.composeOption('label', 'value')).toStrictEqual({
+    expect(composeOption('label', 'value')).toStrictEqual({
       label: 'label',
       value: 'value',
     });
   });
 
   it('Should build the correct pairs', () => {
-    expect(html.composeOptions({ label: 'value', label2: 'value2' })).toStrictEqual([
+    expect(composeOptions({ label: 'value', label2: 'value2' })).toStrictEqual([
       { label: 'label', value: 'value' },
       { label: 'label2', value: 'value2' },
     ]);
