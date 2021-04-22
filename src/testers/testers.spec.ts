@@ -1,4 +1,11 @@
-import { isDefined, isUndefined, isNull, isNotNull, isNil, isNotNil, isEqual, isNotEqual } from './index';
+import isDefined from './isDefined';
+import isUndefined from './isUndefined';
+import isNull from './isNull';
+import isNotNull from './isNotNull';
+import isNil from './isNil';
+import isNotNil from './isNotNil';
+import isEqual from './isEqual';
+import isNotEqual from './isNotEqual';
 
 describe('test isDefined', () => {
   it('detects the `undefined` type', () => {
@@ -73,7 +80,6 @@ describe('test isNotNil', () => {
     });
   });
 });
-
 
 describe('test isEqual', () => {
   it('detects the equal types', () => {
