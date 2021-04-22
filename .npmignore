@@ -1,6 +1,7 @@
 .husky/
 git/
 src/
+docs/
 yarn*
 tsconfig*
 .prettier*
