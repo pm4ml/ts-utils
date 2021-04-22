@@ -5,6 +5,7 @@
     "baseUrl": "src",
     "noUnusedLocals": true,
     "outDir": "lib",
+    "module": "commonjs",
     "strict": true,
     "noUnusedParameters": true,
     "noImplicitAny": true,
