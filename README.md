@@ -2,7 +2,7 @@
 
 A collection of Typescript utilities for the frontend apps.
 
-To install the module run ```bash yarn add @modusbox/ts-utils```.
+To install the module run `yarn add @modusbox/ts-utils`.
 
 Documentation is available at [https://modusintegration.github.io/ts-utils](https://modusintegration.github.io/ts-utils)
 

@@ -1,7 +1,7 @@
-import downloadFile from './downloadFile';
-import readFileAsText from './readFileAsText';
-import loadFile from './loadFile';
-import copyToClipboard from './copyToClipboard';
-
-export { readFileAsText, downloadFile, loadFile, copyToClipboard };
+export { default as downloadFile } from './downloadFile';
+export { default as readFileAsText } from './readFileAsText';
+export { default as loadFile } from './loadFile';
+export { default as copyToClipboard } from './copyToClipboard';
 export * from './types';
+
+export const test = '2';

@@ -62,33 +62,32 @@
 					<h1>@modusbox/ts-utils</h1>
 				</a>
 				<p>A collection of Typescript utilities for the frontend apps.</p>
-				<p>To install the module run <code>bash yarn add @modusbox/ts-utils</code>.</p>
-				<p>Documentation is available at <a href="https://modusintegration.github.io/ts-utils">https://modusintegration.github.io/ts-utils</a></p>
-				<a href="#development" id="development" style="color: inherit; text-decoration: none;">
-					<h3>Development</h3>
+				<a href="#installation" id="installation" style="color: inherit; text-decoration: none;">
+					<h3>Installation</h3>
 				</a>
-				<p>First install the dependencies with <code>yarn install</code>.</p>
-				<p>It is suggested to configure your editor/IDE to use ESLint plugins so that you&#39;ll be able to see warnings and errors while coding.</p>
-				<a href="#testing" id="testing" style="color: inherit; text-decoration: none;">
-					<h3>Testing</h3>
+				<p>To install the module simply run <code>yarn add @modusbox/ts-utils</code>.</p>
+				<a href="#usage" id="usage" style="color: inherit; text-decoration: none;">
+					<h3>Usage</h3>
 				</a>
-				<p>The library uses Jest for testing. Tests should be written in .ts files, post with <em>.spec</em> eg <code>html.spec.ts</code>.</p>
-				<p>Use <code>yarn test</code> to launch the test runner.</p>
-				<a href="#coding-standards" id="coding-standards" style="color: inherit; text-decoration: none;">
-					<h3>Coding standards</h3>
-				</a>
-				<p>The project uses ESLint extending Airbnb, Prettier, Typescript recommended rules.</p>
-				<p>Use <code>yarn lint</code> to run ESLint across the source files.</p>
-				<a href="#building-the-library" id="building-the-library" style="color: inherit; text-decoration: none;">
-					<h3>Building the library</h3>
-				</a>
-				<p>You can use the command <code>yarn compile</code> to launch <code>tsc</code> locally. </p>
-				<p>While this is not a necessary step while developing, it can be useful when you want to test the library locally with <code>yarn link</code>.</p>
-				<a href="#documentation" id="documentation" style="color: inherit; text-decoration: none;">
-					<h3>Documentation</h3>
-				</a>
-				<p>The project uses Typedoc to generate documentation. </p>
-				<p>Use <code>yarn docs</code> to run Typedoc on the codebase.</p>
+				<pre><code class="language-ts"><span style="color: #008000">// import everything</span>
+<span style="color: #AF00DB">import</span><span style="color: #000000"> </span><span style="color: #0000FF">*</span><span style="color: #000000"> </span><span style="color: #AF00DB">as</span><span style="color: #000000"> </span><span style="color: #001080">utils</span><span style="color: #000000"> </span><span style="color: #AF00DB">from</span><span style="color: #000000"> </span><span style="color: #A31515">&#039;@modusbox/ts-utils&#039;</span><span style="color: #000000">;</span>
+<span style="color: #008000">// await utils.async.sleep(10);</span>
+
+<span style="color: #008000">// import all from module</span>
+<span style="color: #AF00DB">import</span><span style="color: #000000"> </span><span style="color: #0000FF">*</span><span style="color: #000000"> </span><span style="color: #AF00DB">as</span><span style="color: #000000"> </span><span style="color: #001080">async</span><span style="color: #000000"> </span><span style="color: #AF00DB">from</span><span style="color: #000000"> </span><span style="color: #A31515">&#039;@modusbox/ts-utils/lib/async&#039;</span><span style="color: #000000">;</span>
+<span style="color: #008000">// await async.sleep(10);</span>
+
+<span style="color: #008000">// import from module as named export </span>
+<span style="color: #AF00DB">import</span><span style="color: #000000"> { </span><span style="color: #001080">sleep</span><span style="color: #000000"> } </span><span style="color: #AF00DB">from</span><span style="color: #000000"> </span><span style="color: #A31515">&#039;@modusbox/ts-utils/lib/async&#039;</span><span style="color: #000000">;</span>
+<span style="color: #008000">// await sleep(10);</span>
+
+<span style="color: #008000">// import a single utility</span>
+<span style="color: #AF00DB">import</span><span style="color: #000000"> </span><span style="color: #001080">sleep</span><span style="color: #000000"> </span><span style="color: #AF00DB">from</span><span style="color: #000000"> </span><span style="color: #A31515">&#039;@modusbox/ts-utils/lib/async/sleep&#039;</span><span style="color: #000000">;</span>
+<span style="color: #008000">// await sleep(10);</span>
+
+<span style="color: #008000">// import a type</span>
+<span style="color: #AF00DB">import</span><span style="color: #000000"> { </span><span style="color: #001080">TextFileContent</span><span style="color: #000000"> } </span><span style="color: #AF00DB">from</span><span style="color: #000000"> </span><span style="color: #A31515">&#039;@modusbox/ts-utils/lib/file&#039;</span><span style="color: #000000">;</span>
+</code></pre>
 			</div>
 		</div>
 		<div class="col-4 col-menu menu-sticky-wrap menu-highlight">

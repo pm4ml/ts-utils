@@ -1,3 +1,1 @@
-import sleep from './sleep';
-
-export { sleep };
+export { default as sleep } from './sleep';
