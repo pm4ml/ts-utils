@@ -71,23 +71,27 @@
 				</a>
 				<pre><code class="language-ts"><span style="color: #008000">// import everything</span>
 <span style="color: #AF00DB">import</span><span style="color: #000000"> </span><span style="color: #0000FF">*</span><span style="color: #000000"> </span><span style="color: #AF00DB">as</span><span style="color: #000000"> </span><span style="color: #001080">utils</span><span style="color: #000000"> </span><span style="color: #AF00DB">from</span><span style="color: #000000"> </span><span style="color: #A31515">&#039;@modusbox/ts-utils&#039;</span><span style="color: #000000">;</span>
-<span style="color: #008000">// await utils.async.sleep(10);</span>
+<span style="color: #AF00DB">await</span><span style="color: #000000"> </span><span style="color: #001080">utils</span><span style="color: #000000">.</span><span style="color: #001080">async</span><span style="color: #000000">.</span><span style="color: #795E26">sleep</span><span style="color: #000000">(</span><span style="color: #098658">10</span><span style="color: #000000">);</span>
 
 <span style="color: #008000">// import all from module</span>
 <span style="color: #AF00DB">import</span><span style="color: #000000"> </span><span style="color: #0000FF">*</span><span style="color: #000000"> </span><span style="color: #AF00DB">as</span><span style="color: #000000"> </span><span style="color: #001080">async</span><span style="color: #000000"> </span><span style="color: #AF00DB">from</span><span style="color: #000000"> </span><span style="color: #A31515">&#039;@modusbox/ts-utils/lib/async&#039;</span><span style="color: #000000">;</span>
-<span style="color: #008000">// await async.sleep(10);</span>
+<span style="color: #AF00DB">await</span><span style="color: #000000"> </span><span style="color: #001080">async</span><span style="color: #000000">.</span><span style="color: #795E26">sleep</span><span style="color: #000000">(</span><span style="color: #098658">10</span><span style="color: #000000">);</span>
 
 <span style="color: #008000">// import from module as named export </span>
 <span style="color: #AF00DB">import</span><span style="color: #000000"> { </span><span style="color: #001080">sleep</span><span style="color: #000000"> } </span><span style="color: #AF00DB">from</span><span style="color: #000000"> </span><span style="color: #A31515">&#039;@modusbox/ts-utils/lib/async&#039;</span><span style="color: #000000">;</span>
-<span style="color: #008000">// await sleep(10);</span>
+<span style="color: #AF00DB">await</span><span style="color: #000000"> </span><span style="color: #795E26">sleep</span><span style="color: #000000">(</span><span style="color: #098658">10</span><span style="color: #000000">);</span>
 
 <span style="color: #008000">// import a single utility</span>
 <span style="color: #AF00DB">import</span><span style="color: #000000"> </span><span style="color: #001080">sleep</span><span style="color: #000000"> </span><span style="color: #AF00DB">from</span><span style="color: #000000"> </span><span style="color: #A31515">&#039;@modusbox/ts-utils/lib/async/sleep&#039;</span><span style="color: #000000">;</span>
-<span style="color: #008000">// await sleep(10);</span>
+<span style="color: #AF00DB">await</span><span style="color: #000000"> </span><span style="color: #795E26">sleep</span><span style="color: #000000">(</span><span style="color: #098658">10</span><span style="color: #000000">);</span>
 
 <span style="color: #008000">// import a type</span>
 <span style="color: #AF00DB">import</span><span style="color: #000000"> { </span><span style="color: #001080">TextFileContent</span><span style="color: #000000"> } </span><span style="color: #AF00DB">from</span><span style="color: #000000"> </span><span style="color: #A31515">&#039;@modusbox/ts-utils/lib/file&#039;</span><span style="color: #000000">;</span>
 </code></pre>
+				<p>Modules available:</p>
+				<ul>
+					<li><a href="./async/README.md">async</a></li>
+				</ul>
 			</div>
 		</div>
 		<div class="col-4 col-menu menu-sticky-wrap menu-highlight">
