@@ -1,6 +1,6 @@
 import { AnyType, JsonType } from './types';
 
-function getItem (key: string): AnyType | JsonType {
+function getItem(key: string): AnyType | JsonType {
   const unparsed = localStorage.getItem(key);
   if (!unparsed) {
     return undefined;
@@ -13,6 +13,6 @@ function getItem (key: string): AnyType | JsonType {
     localStorage.removeItem(key);
   }
   return parsed;
-};
+}
 
 export default getItem;

@@ -1,4 +1,4 @@
-function removeItem (key: string): void {
+function removeItem(key: string): void {
   localStorage.removeItem(key);
 }
 
