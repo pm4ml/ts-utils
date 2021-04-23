@@ -10,7 +10,7 @@ describe('tests the localstorage JSON helpers', () => {
       expect(getItem('item')).toEqual(testObject);
     });
 
-    it('Should set and get a JSON object', () => {
+    it('Should set and remove a JSON object', () => {
       setItem('item', testObject);
       removeItem('item');
       expect(getItem('item')).toEqual(undefined);
