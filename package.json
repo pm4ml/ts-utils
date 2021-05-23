@@ -7,10 +7,6 @@
   "files": [
     "lib/**/*"
   ],
-  "exports": {
-    ".": "./lib/index.js",
-    "./": "./lib/"
-  },
   "dependencies": {
     "lodash": "^4.17.21"
   },
