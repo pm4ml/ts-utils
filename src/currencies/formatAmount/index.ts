@@ -1,5 +1,5 @@
-import { Currency } from './types';
-import findCurrencySymbol from './findCurrencySymbol';
+import { Currency } from '../types';
+import findCurrencySymbol from '../findCurrencySymbol';
 
 export default function formatAmount(amount: number, currency: Currency = Currency.USD): string {
   const symbol = findCurrencySymbol(currency);

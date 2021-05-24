@@ -1,4 +1,4 @@
-import { OptionValue, Option } from './types';
+import { OptionValue, Option } from '../types';
 
 function composeOption(label: string, value: OptionValue): Option {
   return {

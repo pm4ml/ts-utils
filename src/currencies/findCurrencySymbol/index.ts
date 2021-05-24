@@ -1,5 +1,5 @@
-import { SymbolCurrency, CurrencySymbol } from './types';
-import currencies from './currencies';
+import { SymbolCurrency, CurrencySymbol } from '../types';
+import currencies from '../currencies';
 
 function isSymbolCurrency(currencySymbol: CurrencySymbol): currencySymbol is SymbolCurrency {
   return (<SymbolCurrency>currencySymbol).symbol !== undefined;

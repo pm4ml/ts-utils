@@ -1,4 +1,4 @@
-import { AnyType, JsonType } from './types';
+import { AnyType, JsonType } from '../types';
 
 function getItem(key: string): AnyType | JsonType {
   const unparsed = localStorage.getItem(key);

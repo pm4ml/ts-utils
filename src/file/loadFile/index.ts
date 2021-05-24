@@ -1,5 +1,5 @@
-import { TextFileContent } from './types';
-import readFileAsText from './readFileAsText';
+import { TextFileContent } from '../types';
+import readFileAsText from '../readFileAsText';
 
 async function loadFile(accept = ''): Promise<TextFileContent> {
   return new Promise((resolve, reject) => {
