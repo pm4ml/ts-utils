@@ -2,4 +2,4 @@ export { default as createValidation, createOptionalValidation, createValidator 
 export { getFieldIsValid, getFieldMessages, getIsValid, getMessages } from './getters';
 export { default as toValidationResult, validate } from './runner';
 export { default as vd } from './validators';
-export * from './types';
+export type { ValidationMessage } from './types';
