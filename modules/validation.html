@@ -72,15 +72,7 @@
 						<section class="tsd-index-section ">
 							<h3>Interfaces</h3>
 							<ul class="tsd-index-list">
-								<li class="tsd-kind-interface tsd-parent-kind-namespace"><a href="../interfaces/validation.validationfield.html" class="tsd-kind-icon">Validation<wbr>Field</a></li>
 								<li class="tsd-kind-interface tsd-parent-kind-namespace"><a href="../interfaces/validation.validationmessage.html" class="tsd-kind-icon">Validation<wbr>Message</a></li>
-								<li class="tsd-kind-interface tsd-parent-kind-namespace"><a href="../interfaces/validation.validationresults.html" class="tsd-kind-icon">Validation<wbr>Results</a></li>
-							</ul>
-						</section>
-						<section class="tsd-index-section ">
-							<h3>Type aliases</h3>
-							<ul class="tsd-index-list">
-								<li class="tsd-kind-type-alias tsd-parent-kind-namespace"><a href="validation.html#validationfields" class="tsd-kind-icon">Validation<wbr>Fields</a></li>
 							</ul>
 						</section>
 						<section class="tsd-index-section ">
@@ -97,9 +89,9 @@
 								<li class="tsd-kind-function tsd-parent-kind-namespace"><a href="validation.html#createvalidator" class="tsd-kind-icon">create<wbr>Validator</a></li>
 								<li class="tsd-kind-function tsd-parent-kind-namespace"><a href="validation.html#getfieldisvalid" class="tsd-kind-icon">get<wbr>Field<wbr>IsValid</a></li>
 								<li class="tsd-kind-function tsd-parent-kind-namespace"><a href="validation.html#getfieldmessages" class="tsd-kind-icon">get<wbr>Field<wbr>Messages</a></li>
-								<li class="tsd-kind-function tsd-parent-kind-namespace"><a href="validation.html#getisvalid" class="tsd-kind-icon">get<wbr>IsValid</a></li>
-								<li class="tsd-kind-function tsd-parent-kind-namespace"><a href="validation.html#getmessages" class="tsd-kind-icon">get<wbr>Messages</a></li>
-								<li class="tsd-kind-function tsd-parent-kind-namespace"><a href="validation.html#tovalidationresult" class="tsd-kind-icon">to<wbr>Validation<wbr>Result</a></li>
+								<li class="tsd-kind-function tsd-parent-kind-namespace tsd-has-type-parameter"><a href="validation.html#getisvalid" class="tsd-kind-icon">get<wbr>IsValid</a></li>
+								<li class="tsd-kind-function tsd-parent-kind-namespace tsd-has-type-parameter"><a href="validation.html#getmessages" class="tsd-kind-icon">get<wbr>Messages</a></li>
+								<li class="tsd-kind-function tsd-parent-kind-namespace tsd-has-type-parameter"><a href="validation.html#tovalidationresult" class="tsd-kind-icon">to<wbr>Validation<wbr>Result</a></li>
 								<li class="tsd-kind-function tsd-parent-kind-namespace"><a href="validation.html#validate" class="tsd-kind-icon">validate</a></li>
 							</ul>
 						</section>
@@ -107,445 +99,144 @@
 				</section>
 			</section>
 			<section class="tsd-panel-group tsd-member-group ">
-				<h2>Type aliases</h2>
-				<section class="tsd-panel tsd-member tsd-kind-type-alias tsd-parent-kind-namespace">
-					<a name="validationfields" class="tsd-anchor"></a>
-					<h3>Validation<wbr>Fields</h3>
-					<div class="tsd-signature tsd-kind-icon">Validation<wbr>Fields<span class="tsd-signature-symbol">:</span> <span class="tsd-signature-type">Record</span><span class="tsd-signature-symbol">&lt;</span><span class="tsd-signature-type">string</span><span class="tsd-signature-symbol">, </span><a href="../interfaces/validation.validationfield.html" class="tsd-signature-type" data-tsd-kind="Interface">ValidationField</a><span class="tsd-signature-symbol">&gt;</span></div>
-					<aside class="tsd-sources">
-						<ul>
-							<li>Defined in <a href="https://github.com/modusintegration/ts-utils/blob/c4d86d4/src/validation/types.ts#L14">validation/types.ts:14</a></li>
-						</ul>
-					</aside>
-				</section>
-			</section>
-			<section class="tsd-panel-group tsd-member-group ">
 				<h2>Variables</h2>
 				<section class="tsd-panel tsd-member tsd-kind-variable tsd-parent-kind-namespace">
 					<a name="vd" class="tsd-anchor"></a>
 					<h3><span class="tsd-flag ts-flagConst">Const</span> vd</h3>
-					<div class="tsd-signature tsd-kind-icon">vd<span class="tsd-signature-symbol">:</span> <span class="tsd-signature-symbol">{ </span>forcedResult<span class="tsd-signature-symbol">: </span><span class="tsd-signature-symbol">(</span>isValid<span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">any</span>, message<span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">any</span><span class="tsd-signature-symbol">)</span><span class="tsd-signature-symbol"> =&gt; </span><span class="tsd-signature-symbol">{ </span>appliesToTokens<span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">boolean</span><span class="tsd-signature-symbol">; </span>fn<span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">any</span><span class="tsd-signature-symbol">; </span>message<span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">any</span><span class="tsd-signature-symbol"> }</span><span class="tsd-signature-symbol">; </span>hasValue<span class="tsd-signature-symbol">: </span><span class="tsd-signature-symbol">{ </span>appliesToTokens<span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">boolean</span><span class="tsd-signature-symbol">; </span>fn<span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">any</span><span class="tsd-signature-symbol">; </span>message<span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">any</span><span class="tsd-signature-symbol"> }</span><span class="tsd-signature-symbol">; </span>isAlpha<span class="tsd-signature-symbol">: </span><span class="tsd-signature-symbol">{ </span>appliesToTokens<span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">boolean</span><span class="tsd-signature-symbol">; </span>fn<span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">any</span><span class="tsd-signature-symbol">; </span>message<span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">any</span><span class="tsd-signature-symbol"> }</span><span class="tsd-signature-symbol">; </span>isAlphaNum<span class="tsd-signature-symbol">: </span><span class="tsd-signature-symbol">{ </span>appliesToTokens<span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">boolean</span><span class="tsd-signature-symbol">; </span>fn<span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">any</span><span class="tsd-signature-symbol">; </span>message<span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">any</span><span class="tsd-signature-symbol"> }</span><span class="tsd-signature-symbol">; </span>isAlphaNumExtended<span class="tsd-signature-symbol">: </span><span class="tsd-signature-symbol">{ </span>appliesToTokens<span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">boolean</span><span class="tsd-signature-symbol">; </span>fn<span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">any</span><span class="tsd-signature-symbol">; </span>message<span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">any</span><span class="tsd-signature-symbol"> }</span><span class="tsd-signature-symbol">; </span>isAlphaNumExtendedWithBrackets<span class="tsd-signature-symbol">: </span><span class="tsd-signature-symbol">{ </span>appliesToTokens<span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">boolean</span><span class="tsd-signature-symbol">; </span>fn<span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">any</span><span class="tsd-signature-symbol">; </span>message<span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">any</span><span class="tsd-signature-symbol"> }</span><span class="tsd-signature-symbol">; </span>isAlphaNumExtendedWithDots<span class="tsd-signature-symbol">: </span><span class="tsd-signature-symbol">{ </span>appliesToTokens<span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">boolean</span><span class="tsd-signature-symbol">; </span>fn<span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">any</span><span class="tsd-signature-symbol">; </span>message<span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">any</span><span class="tsd-signature-symbol"> }</span><span class="tsd-signature-symbol">; </span>isCharacter<span class="tsd-signature-symbol">: </span><span class="tsd-signature-symbol">{ </span>appliesToTokens<span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">boolean</span><span class="tsd-signature-symbol">; </span>fn<span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">any</span><span class="tsd-signature-symbol">; </span>message<span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">any</span><span class="tsd-signature-symbol"> }</span><span class="tsd-signature-symbol">; </span>isEmail<span class="tsd-signature-symbol">: </span><span class="tsd-signature-symbol">{ </span>appliesToTokens<span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">boolean</span><span class="tsd-signature-symbol">; </span>fn<span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">any</span><span class="tsd-signature-symbol">; </span>message<span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">any</span><span class="tsd-signature-symbol"> }</span><span class="tsd-signature-symbol">; </span>isFilename<span class="tsd-signature-symbol">: </span><span class="tsd-signature-symbol">{ </span>appliesToTokens<span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">boolean</span><span class="tsd-signature-symbol">; </span>fn<span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">any</span><span class="tsd-signature-symbol">; </span>message<span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">any</span><span class="tsd-signature-symbol"> }</span><span class="tsd-signature-symbol">; </span>isHost<span class="tsd-signature-symbol">: </span><span class="tsd-signature-symbol">{ </span>appliesToTokens<span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">boolean</span><span class="tsd-signature-symbol">; </span>fn<span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">any</span><span class="tsd-signature-symbol">; </span>message<span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">any</span><span class="tsd-signature-symbol"> }</span><span class="tsd-signature-symbol">; </span>isLong<span class="tsd-signature-symbol">: </span><span class="tsd-signature-symbol">(</span>length<span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">any</span><span class="tsd-signature-symbol">)</span><span class="tsd-signature-symbol"> =&gt; </span><span class="tsd-signature-symbol">{ </span>appliesToTokens<span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">boolean</span><span class="tsd-signature-symbol">; </span>fn<span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">any</span><span class="tsd-signature-symbol">; </span>message<span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">any</span><span class="tsd-signature-symbol"> }</span><span class="tsd-signature-symbol">; </span>isLongBetween<span class="tsd-signature-symbol">: </span><span class="tsd-signature-symbol">(</span>start<span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">any</span>, stop<span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">any</span><span class="tsd-signature-symbol">)</span><span class="tsd-signature-symbol"> =&gt; </span><span class="tsd-signature-symbol">{ </span>appliesToTokens<span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">boolean</span><span class="tsd-signature-symbol">; </span>fn<span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">any</span><span class="tsd-signature-symbol">; </span>message<span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">any</span><span class="tsd-signature-symbol"> }</span><span class="tsd-signature-symbol">; </span>isNotEmptyString<span class="tsd-signature-symbol">: </span><span class="tsd-signature-symbol">{ </span>appliesToTokens<span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">boolean</span><span class="tsd-signature-symbol">; </span>fn<span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">any</span><span class="tsd-signature-symbol">; </span>message<span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">any</span><span class="tsd-signature-symbol"> }</span><span class="tsd-signature-symbol">; </span>isNum<span class="tsd-signature-symbol">: </span><span class="tsd-signature-symbol">{ </span>appliesToTokens<span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">boolean</span><span class="tsd-signature-symbol">; </span>fn<span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">any</span><span class="tsd-signature-symbol">; </span>message<span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">any</span><span class="tsd-signature-symbol"> }</span><span class="tsd-signature-symbol">; </span>isPassword<span class="tsd-signature-symbol">: </span><span class="tsd-signature-symbol">{ </span>appliesToTokens<span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">boolean</span><span class="tsd-signature-symbol">; </span>fn<span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">any</span><span class="tsd-signature-symbol">; </span>message<span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">any</span><span class="tsd-signature-symbol"> }</span><span class="tsd-signature-symbol">; </span>isPhoneNum<span class="tsd-signature-symbol">: </span><span class="tsd-signature-symbol">{ </span>appliesToTokens<span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">boolean</span><span class="tsd-signature-symbol">; </span>fn<span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">any</span><span class="tsd-signature-symbol">; </span>message<span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">any</span><span class="tsd-signature-symbol"> }</span><span class="tsd-signature-symbol">; </span>isPort<span class="tsd-signature-symbol">: </span><span class="tsd-signature-symbol">{ </span>appliesToTokens<span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">boolean</span><span class="tsd-signature-symbol">; </span>fn<span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">any</span><span class="tsd-signature-symbol">; </span>message<span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">any</span><span class="tsd-signature-symbol"> }</span><span class="tsd-signature-symbol">; </span>isPositive<span class="tsd-signature-symbol">: </span><span class="tsd-signature-symbol">{ </span>appliesToTokens<span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">boolean</span><span class="tsd-signature-symbol">; </span>fn<span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">any</span><span class="tsd-signature-symbol">; </span>message<span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">any</span><span class="tsd-signature-symbol"> }</span><span class="tsd-signature-symbol">; </span>isRequired<span class="tsd-signature-symbol">: </span><span class="tsd-signature-symbol">{ </span>appliesToTokens<span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">boolean</span><span class="tsd-signature-symbol">; </span>fn<span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">any</span><span class="tsd-signature-symbol">; </span>message<span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">any</span><span class="tsd-signature-symbol"> }</span><span class="tsd-signature-symbol">; </span>isText<span class="tsd-signature-symbol">: </span><span class="tsd-signature-symbol">{ </span>appliesToTokens<span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">boolean</span><span class="tsd-signature-symbol">; </span>fn<span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">any</span><span class="tsd-signature-symbol">; </span>message<span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">any</span><span class="tsd-signature-symbol"> }</span><span class="tsd-signature-symbol">; </span>isURL<span class="tsd-signature-symbol">: </span><span class="tsd-signature-symbol">{ </span>appliesToTokens<span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">boolean</span><span class="tsd-signature-symbol">; </span>fn<span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">any</span><span class="tsd-signature-symbol">; </span>message<span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">any</span><span class="tsd-signature-symbol"> }</span><span class="tsd-signature-symbol">; </span>maxLength<span class="tsd-signature-symbol">: </span><span class="tsd-signature-symbol">(</span>length<span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">any</span><span class="tsd-signature-symbol">)</span><span class="tsd-signature-symbol"> =&gt; </span><span class="tsd-signature-symbol">{ </span>appliesToTokens<span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">boolean</span><span class="tsd-signature-symbol">; </span>fn<span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">any</span><span class="tsd-signature-symbol">; </span>message<span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">any</span><span class="tsd-signature-symbol"> }</span><span class="tsd-signature-symbol">; </span>noSpace<span class="tsd-signature-symbol">: </span><span class="tsd-signature-symbol">{ </span>appliesToTokens<span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">boolean</span><span class="tsd-signature-symbol">; </span>fn<span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">any</span><span class="tsd-signature-symbol">; </span>message<span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">any</span><span class="tsd-signature-symbol"> }</span><span class="tsd-signature-symbol"> }</span><span class="tsd-signature-symbol"> = ...</span></div>
+					<div class="tsd-signature tsd-kind-icon">vd<span class="tsd-signature-symbol">:</span> <span class="tsd-signature-symbol">{ </span>hasValue<span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">Validator</span><span class="tsd-signature-symbol">; </span>isAlpha<span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">Validator</span><span class="tsd-signature-symbol">; </span>isAlphaNum<span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">Validator</span><span class="tsd-signature-symbol">; </span>isAlphaNumExtended<span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">Validator</span><span class="tsd-signature-symbol">; </span>isAlphaNumExtendedWithBrackets<span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">Validator</span><span class="tsd-signature-symbol">; </span>isAlphaNumExtendedWithDots<span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">Validator</span><span class="tsd-signature-symbol">; </span>isCharacter<span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">Validator</span><span class="tsd-signature-symbol">; </span>isEmail<span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">Validator</span><span class="tsd-signature-symbol">; </span>isFilename<span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">Validator</span><span class="tsd-signature-symbol">; </span>isHost<span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">Validator</span><span class="tsd-signature-symbol">; </span>isLong<span class="tsd-signature-symbol">: </span><span class="tsd-signature-symbol">(</span>length<span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">number</span><span class="tsd-signature-symbol">)</span><span class="tsd-signature-symbol"> =&gt; </span><span class="tsd-signature-type">Validator</span><span class="tsd-signature-symbol">; </span>isLongBetween<span class="tsd-signature-symbol">: </span><span class="tsd-signature-symbol">(</span>start<span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">number</span>, stop<span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">number</span><span class="tsd-signature-symbol">)</span><span class="tsd-signature-symbol"> =&gt; </span><span class="tsd-signature-type">Validator</span><span class="tsd-signature-symbol">; </span>isNotEmptyString<span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">Validator</span><span class="tsd-signature-symbol">; </span>isNum<span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">Validator</span><span class="tsd-signature-symbol">; </span>isPassword<span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">Validator</span><span class="tsd-signature-symbol">; </span>isPhoneNum<span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">Validator</span><span class="tsd-signature-symbol">; </span>isPort<span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">Validator</span><span class="tsd-signature-symbol">; </span>isPositive<span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">Validator</span><span class="tsd-signature-symbol">; </span>isRequired<span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">Validator</span><span class="tsd-signature-symbol">; </span>isText<span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">Validator</span><span class="tsd-signature-symbol">; </span>isURL<span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">Validator</span><span class="tsd-signature-symbol">; </span>maxLength<span class="tsd-signature-symbol">: </span><span class="tsd-signature-symbol">(</span>length<span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">number</span><span class="tsd-signature-symbol">)</span><span class="tsd-signature-symbol"> =&gt; </span><span class="tsd-signature-type">Validator</span><span class="tsd-signature-symbol">; </span>noSpace<span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">Validator</span><span class="tsd-signature-symbol"> }</span><span class="tsd-signature-symbol"> = ...</span></div>
 					<aside class="tsd-sources">
 						<ul>
-							<li>Defined in <a href="https://github.com/modusintegration/ts-utils/blob/c4d86d4/src/validation/validators.js#L9">validation/validators.js:9</a></li>
+							<li>Defined in <a href="https://github.com/modusintegration/ts-utils/blob/f2dfdaf/src/validation/validators.ts#L17">validation/validators.ts:17</a></li>
 						</ul>
 					</aside>
 					<div class="tsd-type-declaration">
 						<h4>Type declaration</h4>
 						<ul class="tsd-parameters">
 							<li class="tsd-parameter">
-								<h5>forced<wbr>Result<span class="tsd-signature-symbol">: </span><span class="tsd-signature-symbol">(</span>isValid<span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">any</span>, message<span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">any</span><span class="tsd-signature-symbol">)</span><span class="tsd-signature-symbol"> =&gt; </span><span class="tsd-signature-symbol">{ </span>appliesToTokens<span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">boolean</span><span class="tsd-signature-symbol">; </span>fn<span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">any</span><span class="tsd-signature-symbol">; </span>message<span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">any</span><span class="tsd-signature-symbol"> }</span></h5>
+								<h5>has<wbr>Value<span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">Validator</span></h5>
+							</li>
+							<li class="tsd-parameter">
+								<h5>is<wbr>Alpha<span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">Validator</span></h5>
+							</li>
+							<li class="tsd-parameter">
+								<h5>is<wbr>Alpha<wbr>Num<span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">Validator</span></h5>
+							</li>
+							<li class="tsd-parameter">
+								<h5>is<wbr>Alpha<wbr>Num<wbr>Extended<span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">Validator</span></h5>
+							</li>
+							<li class="tsd-parameter">
+								<h5>is<wbr>Alpha<wbr>Num<wbr>Extended<wbr>With<wbr>Brackets<span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">Validator</span></h5>
+							</li>
+							<li class="tsd-parameter">
+								<h5>is<wbr>Alpha<wbr>Num<wbr>Extended<wbr>With<wbr>Dots<span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">Validator</span></h5>
+							</li>
+							<li class="tsd-parameter">
+								<h5>is<wbr>Character<span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">Validator</span></h5>
+							</li>
+							<li class="tsd-parameter">
+								<h5>is<wbr>Email<span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">Validator</span></h5>
+							</li>
+							<li class="tsd-parameter">
+								<h5>is<wbr>Filename<span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">Validator</span></h5>
+							</li>
+							<li class="tsd-parameter">
+								<h5>is<wbr>Host<span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">Validator</span></h5>
+							</li>
+							<li class="tsd-parameter">
+								<h5>is<wbr>Long<span class="tsd-signature-symbol">: </span><span class="tsd-signature-symbol">(</span>length<span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">number</span><span class="tsd-signature-symbol">)</span><span class="tsd-signature-symbol"> =&gt; </span><span class="tsd-signature-type">Validator</span></h5>
 								<ul class="tsd-parameters">
 									<li class="tsd-parameter-signature">
 										<ul class="tsd-signatures tsd-kind-type-literal tsd-parent-kind-type-literal">
-											<li class="tsd-signature tsd-kind-icon"><span class="tsd-signature-symbol">(</span>isValid<span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">any</span>, message<span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">any</span><span class="tsd-signature-symbol">)</span><span class="tsd-signature-symbol">: </span><span class="tsd-signature-symbol">{ </span>appliesToTokens<span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">boolean</span><span class="tsd-signature-symbol">; </span>fn<span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">any</span><span class="tsd-signature-symbol">; </span>message<span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">any</span><span class="tsd-signature-symbol"> }</span></li>
+											<li class="tsd-signature tsd-kind-icon"><span class="tsd-signature-symbol">(</span>length<span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">number</span><span class="tsd-signature-symbol">)</span><span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">Validator</span></li>
 										</ul>
 										<ul class="tsd-descriptions">
 											<li class="tsd-description">
 												<h4 class="tsd-parameters-title">Parameters</h4>
 												<ul class="tsd-parameters">
 													<li>
-														<h5>isValid: <span class="tsd-signature-type">any</span></h5>
-													</li>
-													<li>
-														<h5>message: <span class="tsd-signature-type">any</span></h5>
+														<h5>length: <span class="tsd-signature-type">number</span></h5>
 													</li>
 												</ul>
-												<h4 class="tsd-returns-title">Returns <span class="tsd-signature-symbol">{ </span>appliesToTokens<span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">boolean</span><span class="tsd-signature-symbol">; </span>fn<span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">any</span><span class="tsd-signature-symbol">; </span>message<span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">any</span><span class="tsd-signature-symbol"> }</span></h4>
-												<ul class="tsd-parameters">
-													<li class="tsd-parameter">
-														<h5>applies<wbr>ToTokens<span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">boolean</span></h5>
-													</li>
-													<li class="tsd-parameter">
-														<h5>fn<span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">any</span></h5>
-													</li>
-													<li class="tsd-parameter">
-														<h5>message<span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">any</span></h5>
-													</li>
-												</ul>
+												<h4 class="tsd-returns-title">Returns <span class="tsd-signature-type">Validator</span></h4>
 											</li>
 										</ul>
 									</li>
 								</ul>
 							</li>
 							<li class="tsd-parameter">
-								<h5>has<wbr>Value<span class="tsd-signature-symbol">: </span><span class="tsd-signature-symbol">{ </span>appliesToTokens<span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">boolean</span><span class="tsd-signature-symbol">; </span>fn<span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">any</span><span class="tsd-signature-symbol">; </span>message<span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">any</span><span class="tsd-signature-symbol"> }</span></h5>
-								<ul class="tsd-parameters">
-									<li class="tsd-parameter">
-										<h5>applies<wbr>ToTokens<span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">boolean</span></h5>
-									</li>
-									<li class="tsd-parameter">
-										<h5>fn<span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">any</span></h5>
-									</li>
-									<li class="tsd-parameter">
-										<h5>message<span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">any</span></h5>
-									</li>
-								</ul>
-							</li>
-							<li class="tsd-parameter">
-								<h5>is<wbr>Alpha<span class="tsd-signature-symbol">: </span><span class="tsd-signature-symbol">{ </span>appliesToTokens<span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">boolean</span><span class="tsd-signature-symbol">; </span>fn<span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">any</span><span class="tsd-signature-symbol">; </span>message<span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">any</span><span class="tsd-signature-symbol"> }</span></h5>
-								<ul class="tsd-parameters">
-									<li class="tsd-parameter">
-										<h5>applies<wbr>ToTokens<span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">boolean</span></h5>
-									</li>
-									<li class="tsd-parameter">
-										<h5>fn<span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">any</span></h5>
-									</li>
-									<li class="tsd-parameter">
-										<h5>message<span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">any</span></h5>
-									</li>
-								</ul>
-							</li>
-							<li class="tsd-parameter">
-								<h5>is<wbr>Alpha<wbr>Num<span class="tsd-signature-symbol">: </span><span class="tsd-signature-symbol">{ </span>appliesToTokens<span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">boolean</span><span class="tsd-signature-symbol">; </span>fn<span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">any</span><span class="tsd-signature-symbol">; </span>message<span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">any</span><span class="tsd-signature-symbol"> }</span></h5>
-								<ul class="tsd-parameters">
-									<li class="tsd-parameter">
-										<h5>applies<wbr>ToTokens<span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">boolean</span></h5>
-									</li>
-									<li class="tsd-parameter">
-										<h5>fn<span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">any</span></h5>
-									</li>
-									<li class="tsd-parameter">
-										<h5>message<span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">any</span></h5>
-									</li>
-								</ul>
-							</li>
-							<li class="tsd-parameter">
-								<h5>is<wbr>Alpha<wbr>Num<wbr>Extended<span class="tsd-signature-symbol">: </span><span class="tsd-signature-symbol">{ </span>appliesToTokens<span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">boolean</span><span class="tsd-signature-symbol">; </span>fn<span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">any</span><span class="tsd-signature-symbol">; </span>message<span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">any</span><span class="tsd-signature-symbol"> }</span></h5>
-								<ul class="tsd-parameters">
-									<li class="tsd-parameter">
-										<h5>applies<wbr>ToTokens<span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">boolean</span></h5>
-									</li>
-									<li class="tsd-parameter">
-										<h5>fn<span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">any</span></h5>
-									</li>
-									<li class="tsd-parameter">
-										<h5>message<span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">any</span></h5>
-									</li>
-								</ul>
-							</li>
-							<li class="tsd-parameter">
-								<h5>is<wbr>Alpha<wbr>Num<wbr>Extended<wbr>With<wbr>Brackets<span class="tsd-signature-symbol">: </span><span class="tsd-signature-symbol">{ </span>appliesToTokens<span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">boolean</span><span class="tsd-signature-symbol">; </span>fn<span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">any</span><span class="tsd-signature-symbol">; </span>message<span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">any</span><span class="tsd-signature-symbol"> }</span></h5>
-								<ul class="tsd-parameters">
-									<li class="tsd-parameter">
-										<h5>applies<wbr>ToTokens<span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">boolean</span></h5>
-									</li>
-									<li class="tsd-parameter">
-										<h5>fn<span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">any</span></h5>
-									</li>
-									<li class="tsd-parameter">
-										<h5>message<span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">any</span></h5>
-									</li>
-								</ul>
-							</li>
-							<li class="tsd-parameter">
-								<h5>is<wbr>Alpha<wbr>Num<wbr>Extended<wbr>With<wbr>Dots<span class="tsd-signature-symbol">: </span><span class="tsd-signature-symbol">{ </span>appliesToTokens<span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">boolean</span><span class="tsd-signature-symbol">; </span>fn<span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">any</span><span class="tsd-signature-symbol">; </span>message<span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">any</span><span class="tsd-signature-symbol"> }</span></h5>
-								<ul class="tsd-parameters">
-									<li class="tsd-parameter">
-										<h5>applies<wbr>ToTokens<span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">boolean</span></h5>
-									</li>
-									<li class="tsd-parameter">
-										<h5>fn<span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">any</span></h5>
-									</li>
-									<li class="tsd-parameter">
-										<h5>message<span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">any</span></h5>
-									</li>
-								</ul>
-							</li>
-							<li class="tsd-parameter">
-								<h5>is<wbr>Character<span class="tsd-signature-symbol">: </span><span class="tsd-signature-symbol">{ </span>appliesToTokens<span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">boolean</span><span class="tsd-signature-symbol">; </span>fn<span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">any</span><span class="tsd-signature-symbol">; </span>message<span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">any</span><span class="tsd-signature-symbol"> }</span></h5>
-								<ul class="tsd-parameters">
-									<li class="tsd-parameter">
-										<h5>applies<wbr>ToTokens<span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">boolean</span></h5>
-									</li>
-									<li class="tsd-parameter">
-										<h5>fn<span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">any</span></h5>
-									</li>
-									<li class="tsd-parameter">
-										<h5>message<span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">any</span></h5>
-									</li>
-								</ul>
-							</li>
-							<li class="tsd-parameter">
-								<h5>is<wbr>Email<span class="tsd-signature-symbol">: </span><span class="tsd-signature-symbol">{ </span>appliesToTokens<span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">boolean</span><span class="tsd-signature-symbol">; </span>fn<span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">any</span><span class="tsd-signature-symbol">; </span>message<span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">any</span><span class="tsd-signature-symbol"> }</span></h5>
-								<ul class="tsd-parameters">
-									<li class="tsd-parameter">
-										<h5>applies<wbr>ToTokens<span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">boolean</span></h5>
-									</li>
-									<li class="tsd-parameter">
-										<h5>fn<span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">any</span></h5>
-									</li>
-									<li class="tsd-parameter">
-										<h5>message<span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">any</span></h5>
-									</li>
-								</ul>
-							</li>
-							<li class="tsd-parameter">
-								<h5>is<wbr>Filename<span class="tsd-signature-symbol">: </span><span class="tsd-signature-symbol">{ </span>appliesToTokens<span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">boolean</span><span class="tsd-signature-symbol">; </span>fn<span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">any</span><span class="tsd-signature-symbol">; </span>message<span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">any</span><span class="tsd-signature-symbol"> }</span></h5>
-								<ul class="tsd-parameters">
-									<li class="tsd-parameter">
-										<h5>applies<wbr>ToTokens<span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">boolean</span></h5>
-									</li>
-									<li class="tsd-parameter">
-										<h5>fn<span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">any</span></h5>
-									</li>
-									<li class="tsd-parameter">
-										<h5>message<span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">any</span></h5>
-									</li>
-								</ul>
-							</li>
-							<li class="tsd-parameter">
-								<h5>is<wbr>Host<span class="tsd-signature-symbol">: </span><span class="tsd-signature-symbol">{ </span>appliesToTokens<span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">boolean</span><span class="tsd-signature-symbol">; </span>fn<span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">any</span><span class="tsd-signature-symbol">; </span>message<span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">any</span><span class="tsd-signature-symbol"> }</span></h5>
-								<ul class="tsd-parameters">
-									<li class="tsd-parameter">
-										<h5>applies<wbr>ToTokens<span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">boolean</span></h5>
-									</li>
-									<li class="tsd-parameter">
-										<h5>fn<span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">any</span></h5>
-									</li>
-									<li class="tsd-parameter">
-										<h5>message<span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">any</span></h5>
-									</li>
-								</ul>
-							</li>
-							<li class="tsd-parameter">
-								<h5>is<wbr>Long<span class="tsd-signature-symbol">: </span><span class="tsd-signature-symbol">(</span>length<span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">any</span><span class="tsd-signature-symbol">)</span><span class="tsd-signature-symbol"> =&gt; </span><span class="tsd-signature-symbol">{ </span>appliesToTokens<span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">boolean</span><span class="tsd-signature-symbol">; </span>fn<span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">any</span><span class="tsd-signature-symbol">; </span>message<span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">any</span><span class="tsd-signature-symbol"> }</span></h5>
+								<h5>is<wbr>Long<wbr>Between<span class="tsd-signature-symbol">: </span><span class="tsd-signature-symbol">(</span>start<span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">number</span>, stop<span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">number</span><span class="tsd-signature-symbol">)</span><span class="tsd-signature-symbol"> =&gt; </span><span class="tsd-signature-type">Validator</span></h5>
 								<ul class="tsd-parameters">
 									<li class="tsd-parameter-signature">
 										<ul class="tsd-signatures tsd-kind-type-literal tsd-parent-kind-type-literal">
-											<li class="tsd-signature tsd-kind-icon"><span class="tsd-signature-symbol">(</span>length<span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">any</span><span class="tsd-signature-symbol">)</span><span class="tsd-signature-symbol">: </span><span class="tsd-signature-symbol">{ </span>appliesToTokens<span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">boolean</span><span class="tsd-signature-symbol">; </span>fn<span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">any</span><span class="tsd-signature-symbol">; </span>message<span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">any</span><span class="tsd-signature-symbol"> }</span></li>
+											<li class="tsd-signature tsd-kind-icon"><span class="tsd-signature-symbol">(</span>start<span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">number</span>, stop<span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">number</span><span class="tsd-signature-symbol">)</span><span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">Validator</span></li>
 										</ul>
 										<ul class="tsd-descriptions">
 											<li class="tsd-description">
 												<h4 class="tsd-parameters-title">Parameters</h4>
 												<ul class="tsd-parameters">
 													<li>
-														<h5>length: <span class="tsd-signature-type">any</span></h5>
+														<h5>start: <span class="tsd-signature-type">number</span></h5>
+													</li>
+													<li>
+														<h5>stop: <span class="tsd-signature-type">number</span></h5>
 													</li>
 												</ul>
-												<h4 class="tsd-returns-title">Returns <span class="tsd-signature-symbol">{ </span>appliesToTokens<span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">boolean</span><span class="tsd-signature-symbol">; </span>fn<span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">any</span><span class="tsd-signature-symbol">; </span>message<span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">any</span><span class="tsd-signature-symbol"> }</span></h4>
-												<ul class="tsd-parameters">
-													<li class="tsd-parameter">
-														<h5>applies<wbr>ToTokens<span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">boolean</span></h5>
-													</li>
-													<li class="tsd-parameter">
-														<h5>fn<span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">any</span></h5>
-													</li>
-													<li class="tsd-parameter">
-														<h5>message<span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">any</span></h5>
-													</li>
-												</ul>
+												<h4 class="tsd-returns-title">Returns <span class="tsd-signature-type">Validator</span></h4>
 											</li>
 										</ul>
 									</li>
 								</ul>
 							</li>
 							<li class="tsd-parameter">
-								<h5>is<wbr>Long<wbr>Between<span class="tsd-signature-symbol">: </span><span class="tsd-signature-symbol">(</span>start<span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">any</span>, stop<span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">any</span><span class="tsd-signature-symbol">)</span><span class="tsd-signature-symbol"> =&gt; </span><span class="tsd-signature-symbol">{ </span>appliesToTokens<span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">boolean</span><span class="tsd-signature-symbol">; </span>fn<span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">any</span><span class="tsd-signature-symbol">; </span>message<span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">any</span><span class="tsd-signature-symbol"> }</span></h5>
+								<h5>is<wbr>Not<wbr>Empty<wbr>String<span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">Validator</span></h5>
+							</li>
+							<li class="tsd-parameter">
+								<h5>is<wbr>Num<span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">Validator</span></h5>
+							</li>
+							<li class="tsd-parameter">
+								<h5>is<wbr>Password<span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">Validator</span></h5>
+							</li>
+							<li class="tsd-parameter">
+								<h5>is<wbr>Phone<wbr>Num<span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">Validator</span></h5>
+							</li>
+							<li class="tsd-parameter">
+								<h5>is<wbr>Port<span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">Validator</span></h5>
+							</li>
+							<li class="tsd-parameter">
+								<h5>is<wbr>Positive<span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">Validator</span></h5>
+							</li>
+							<li class="tsd-parameter">
+								<h5>is<wbr>Required<span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">Validator</span></h5>
+							</li>
+							<li class="tsd-parameter">
+								<h5>is<wbr>Text<span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">Validator</span></h5>
+							</li>
+							<li class="tsd-parameter">
+								<h5>isURL<span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">Validator</span></h5>
+							</li>
+							<li class="tsd-parameter">
+								<h5>max<wbr>Length<span class="tsd-signature-symbol">: </span><span class="tsd-signature-symbol">(</span>length<span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">number</span><span class="tsd-signature-symbol">)</span><span class="tsd-signature-symbol"> =&gt; </span><span class="tsd-signature-type">Validator</span></h5>
 								<ul class="tsd-parameters">
 									<li class="tsd-parameter-signature">
 										<ul class="tsd-signatures tsd-kind-type-literal tsd-parent-kind-type-literal">
-											<li class="tsd-signature tsd-kind-icon"><span class="tsd-signature-symbol">(</span>start<span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">any</span>, stop<span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">any</span><span class="tsd-signature-symbol">)</span><span class="tsd-signature-symbol">: </span><span class="tsd-signature-symbol">{ </span>appliesToTokens<span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">boolean</span><span class="tsd-signature-symbol">; </span>fn<span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">any</span><span class="tsd-signature-symbol">; </span>message<span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">any</span><span class="tsd-signature-symbol"> }</span></li>
+											<li class="tsd-signature tsd-kind-icon"><span class="tsd-signature-symbol">(</span>length<span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">number</span><span class="tsd-signature-symbol">)</span><span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">Validator</span></li>
 										</ul>
 										<ul class="tsd-descriptions">
 											<li class="tsd-description">
 												<h4 class="tsd-parameters-title">Parameters</h4>
 												<ul class="tsd-parameters">
 													<li>
-														<h5>start: <span class="tsd-signature-type">any</span></h5>
-													</li>
-													<li>
-														<h5>stop: <span class="tsd-signature-type">any</span></h5>
+														<h5>length: <span class="tsd-signature-type">number</span></h5>
 													</li>
 												</ul>
-												<h4 class="tsd-returns-title">Returns <span class="tsd-signature-symbol">{ </span>appliesToTokens<span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">boolean</span><span class="tsd-signature-symbol">; </span>fn<span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">any</span><span class="tsd-signature-symbol">; </span>message<span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">any</span><span class="tsd-signature-symbol"> }</span></h4>
-												<ul class="tsd-parameters">
-													<li class="tsd-parameter">
-														<h5>applies<wbr>ToTokens<span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">boolean</span></h5>
-													</li>
-													<li class="tsd-parameter">
-														<h5>fn<span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">any</span></h5>
-													</li>
-													<li class="tsd-parameter">
-														<h5>message<span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">any</span></h5>
-													</li>
-												</ul>
+												<h4 class="tsd-returns-title">Returns <span class="tsd-signature-type">Validator</span></h4>
 											</li>
 										</ul>
 									</li>
 								</ul>
 							</li>
 							<li class="tsd-parameter">
-								<h5>is<wbr>Not<wbr>Empty<wbr>String<span class="tsd-signature-symbol">: </span><span class="tsd-signature-symbol">{ </span>appliesToTokens<span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">boolean</span><span class="tsd-signature-symbol">; </span>fn<span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">any</span><span class="tsd-signature-symbol">; </span>message<span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">any</span><span class="tsd-signature-symbol"> }</span></h5>
-								<ul class="tsd-parameters">
-									<li class="tsd-parameter">
-										<h5>applies<wbr>ToTokens<span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">boolean</span></h5>
-									</li>
-									<li class="tsd-parameter">
-										<h5>fn<span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">any</span></h5>
-									</li>
-									<li class="tsd-parameter">
-										<h5>message<span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">any</span></h5>
-									</li>
-								</ul>
-							</li>
-							<li class="tsd-parameter">
-								<h5>is<wbr>Num<span class="tsd-signature-symbol">: </span><span class="tsd-signature-symbol">{ </span>appliesToTokens<span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">boolean</span><span class="tsd-signature-symbol">; </span>fn<span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">any</span><span class="tsd-signature-symbol">; </span>message<span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">any</span><span class="tsd-signature-symbol"> }</span></h5>
-								<ul class="tsd-parameters">
-									<li class="tsd-parameter">
-										<h5>applies<wbr>ToTokens<span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">boolean</span></h5>
-									</li>
-									<li class="tsd-parameter">
-										<h5>fn<span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">any</span></h5>
-									</li>
-									<li class="tsd-parameter">
-										<h5>message<span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">any</span></h5>
-									</li>
-								</ul>
-							</li>
-							<li class="tsd-parameter">
-								<h5>is<wbr>Password<span class="tsd-signature-symbol">: </span><span class="tsd-signature-symbol">{ </span>appliesToTokens<span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">boolean</span><span class="tsd-signature-symbol">; </span>fn<span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">any</span><span class="tsd-signature-symbol">; </span>message<span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">any</span><span class="tsd-signature-symbol"> }</span></h5>
-								<ul class="tsd-parameters">
-									<li class="tsd-parameter">
-										<h5>applies<wbr>ToTokens<span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">boolean</span></h5>
-									</li>
-									<li class="tsd-parameter">
-										<h5>fn<span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">any</span></h5>
-									</li>
-									<li class="tsd-parameter">
-										<h5>message<span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">any</span></h5>
-									</li>
-								</ul>
-							</li>
-							<li class="tsd-parameter">
-								<h5>is<wbr>Phone<wbr>Num<span class="tsd-signature-symbol">: </span><span class="tsd-signature-symbol">{ </span>appliesToTokens<span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">boolean</span><span class="tsd-signature-symbol">; </span>fn<span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">any</span><span class="tsd-signature-symbol">; </span>message<span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">any</span><span class="tsd-signature-symbol"> }</span></h5>
-								<ul class="tsd-parameters">
-									<li class="tsd-parameter">
-										<h5>applies<wbr>ToTokens<span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">boolean</span></h5>
-									</li>
-									<li class="tsd-parameter">
-										<h5>fn<span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">any</span></h5>
-									</li>
-									<li class="tsd-parameter">
-										<h5>message<span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">any</span></h5>
-									</li>
-								</ul>
-							</li>
-							<li class="tsd-parameter">
-								<h5>is<wbr>Port<span class="tsd-signature-symbol">: </span><span class="tsd-signature-symbol">{ </span>appliesToTokens<span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">boolean</span><span class="tsd-signature-symbol">; </span>fn<span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">any</span><span class="tsd-signature-symbol">; </span>message<span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">any</span><span class="tsd-signature-symbol"> }</span></h5>
-								<ul class="tsd-parameters">
-									<li class="tsd-parameter">
-										<h5>applies<wbr>ToTokens<span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">boolean</span></h5>
-									</li>
-									<li class="tsd-parameter">
-										<h5>fn<span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">any</span></h5>
-									</li>
-									<li class="tsd-parameter">
-										<h5>message<span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">any</span></h5>
-									</li>
-								</ul>
-							</li>
-							<li class="tsd-parameter">
-								<h5>is<wbr>Positive<span class="tsd-signature-symbol">: </span><span class="tsd-signature-symbol">{ </span>appliesToTokens<span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">boolean</span><span class="tsd-signature-symbol">; </span>fn<span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">any</span><span class="tsd-signature-symbol">; </span>message<span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">any</span><span class="tsd-signature-symbol"> }</span></h5>
-								<ul class="tsd-parameters">
-									<li class="tsd-parameter">
-										<h5>applies<wbr>ToTokens<span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">boolean</span></h5>
-									</li>
-									<li class="tsd-parameter">
-										<h5>fn<span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">any</span></h5>
-									</li>
-									<li class="tsd-parameter">
-										<h5>message<span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">any</span></h5>
-									</li>
-								</ul>
-							</li>
-							<li class="tsd-parameter">
-								<h5>is<wbr>Required<span class="tsd-signature-symbol">: </span><span class="tsd-signature-symbol">{ </span>appliesToTokens<span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">boolean</span><span class="tsd-signature-symbol">; </span>fn<span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">any</span><span class="tsd-signature-symbol">; </span>message<span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">any</span><span class="tsd-signature-symbol"> }</span></h5>
-								<ul class="tsd-parameters">
-									<li class="tsd-parameter">
-										<h5>applies<wbr>ToTokens<span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">boolean</span></h5>
-									</li>
-									<li class="tsd-parameter">
-										<h5>fn<span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">any</span></h5>
-									</li>
-									<li class="tsd-parameter">
-										<h5>message<span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">any</span></h5>
-									</li>
-								</ul>
-							</li>
-							<li class="tsd-parameter">
-								<h5>is<wbr>Text<span class="tsd-signature-symbol">: </span><span class="tsd-signature-symbol">{ </span>appliesToTokens<span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">boolean</span><span class="tsd-signature-symbol">; </span>fn<span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">any</span><span class="tsd-signature-symbol">; </span>message<span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">any</span><span class="tsd-signature-symbol"> }</span></h5>
-								<ul class="tsd-parameters">
-									<li class="tsd-parameter">
-										<h5>applies<wbr>ToTokens<span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">boolean</span></h5>
-									</li>
-									<li class="tsd-parameter">
-										<h5>fn<span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">any</span></h5>
-									</li>
-									<li class="tsd-parameter">
-										<h5>message<span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">any</span></h5>
-									</li>
-								</ul>
-							</li>
-							<li class="tsd-parameter">
-								<h5>isURL<span class="tsd-signature-symbol">: </span><span class="tsd-signature-symbol">{ </span>appliesToTokens<span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">boolean</span><span class="tsd-signature-symbol">; </span>fn<span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">any</span><span class="tsd-signature-symbol">; </span>message<span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">any</span><span class="tsd-signature-symbol"> }</span></h5>
-								<ul class="tsd-parameters">
-									<li class="tsd-parameter">
-										<h5>applies<wbr>ToTokens<span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">boolean</span></h5>
-									</li>
-									<li class="tsd-parameter">
-										<h5>fn<span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">any</span></h5>
-									</li>
-									<li class="tsd-parameter">
-										<h5>message<span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">any</span></h5>
-									</li>
-								</ul>
-							</li>
-							<li class="tsd-parameter">
-								<h5>max<wbr>Length<span class="tsd-signature-symbol">: </span><span class="tsd-signature-symbol">(</span>length<span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">any</span><span class="tsd-signature-symbol">)</span><span class="tsd-signature-symbol"> =&gt; </span><span class="tsd-signature-symbol">{ </span>appliesToTokens<span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">boolean</span><span class="tsd-signature-symbol">; </span>fn<span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">any</span><span class="tsd-signature-symbol">; </span>message<span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">any</span><span class="tsd-signature-symbol"> }</span></h5>
-								<ul class="tsd-parameters">
-									<li class="tsd-parameter-signature">
-										<ul class="tsd-signatures tsd-kind-type-literal tsd-parent-kind-type-literal">
-											<li class="tsd-signature tsd-kind-icon"><span class="tsd-signature-symbol">(</span>length<span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">any</span><span class="tsd-signature-symbol">)</span><span class="tsd-signature-symbol">: </span><span class="tsd-signature-symbol">{ </span>appliesToTokens<span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">boolean</span><span class="tsd-signature-symbol">; </span>fn<span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">any</span><span class="tsd-signature-symbol">; </span>message<span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">any</span><span class="tsd-signature-symbol"> }</span></li>
-										</ul>
-										<ul class="tsd-descriptions">
-											<li class="tsd-description">
-												<h4 class="tsd-parameters-title">Parameters</h4>
-												<ul class="tsd-parameters">
-													<li>
-														<h5>length: <span class="tsd-signature-type">any</span></h5>
-													</li>
-												</ul>
-												<h4 class="tsd-returns-title">Returns <span class="tsd-signature-symbol">{ </span>appliesToTokens<span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">boolean</span><span class="tsd-signature-symbol">; </span>fn<span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">any</span><span class="tsd-signature-symbol">; </span>message<span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">any</span><span class="tsd-signature-symbol"> }</span></h4>
-												<ul class="tsd-parameters">
-													<li class="tsd-parameter">
-														<h5>applies<wbr>ToTokens<span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">boolean</span></h5>
-													</li>
-													<li class="tsd-parameter">
-														<h5>fn<span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">any</span></h5>
-													</li>
-													<li class="tsd-parameter">
-														<h5>message<span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">any</span></h5>
-													</li>
-												</ul>
-											</li>
-										</ul>
-									</li>
-								</ul>
-							</li>
-							<li class="tsd-parameter">
-								<h5>no<wbr>Space<span class="tsd-signature-symbol">: </span><span class="tsd-signature-symbol">{ </span>appliesToTokens<span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">boolean</span><span class="tsd-signature-symbol">; </span>fn<span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">any</span><span class="tsd-signature-symbol">; </span>message<span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">any</span><span class="tsd-signature-symbol"> }</span></h5>
-								<ul class="tsd-parameters">
-									<li class="tsd-parameter">
-										<h5>applies<wbr>ToTokens<span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">boolean</span></h5>
-									</li>
-									<li class="tsd-parameter">
-										<h5>fn<span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">any</span></h5>
-									</li>
-									<li class="tsd-parameter">
-										<h5>message<span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">any</span></h5>
-									</li>
-								</ul>
+								<h5>no<wbr>Space<span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">Validator</span></h5>
 							</li>
 						</ul>
 					</div>
@@ -557,42 +248,22 @@
 					<a name="createoptionalvalidation" class="tsd-anchor"></a>
 					<h3><span class="tsd-flag ts-flagConst">Const</span> create<wbr>Optional<wbr>Validation</h3>
 					<ul class="tsd-signatures tsd-kind-function tsd-parent-kind-namespace">
-						<li class="tsd-signature tsd-kind-icon">create<wbr>Optional<wbr>Validation<span class="tsd-signature-symbol">(</span>validators<span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">any</span>, variables<span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">any</span>, selectors<span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">any</span><span class="tsd-signature-symbol">)</span><span class="tsd-signature-symbol">: </span><span class="tsd-signature-symbol">{ </span>isRequired<span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">any</span><span class="tsd-signature-symbol">; </span>selectors<span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">any</span><span class="tsd-signature-symbol">; </span>validators<span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">any</span><span class="tsd-signature-symbol">; </span>variables<span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">any</span><span class="tsd-signature-symbol"> }</span></li>
+						<li class="tsd-signature tsd-kind-icon">create<wbr>Optional<wbr>Validation<span class="tsd-signature-symbol">(</span>validators<span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">Validator</span><span class="tsd-signature-symbol">[]</span><span class="tsd-signature-symbol">)</span><span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">Validation</span></li>
 					</ul>
 					<ul class="tsd-descriptions">
 						<li class="tsd-description">
 							<aside class="tsd-sources">
 								<ul>
-									<li>Defined in <a href="https://github.com/modusintegration/ts-utils/blob/c4d86d4/src/validation/creators.js#L21">validation/creators.js:21</a></li>
+									<li>Defined in <a href="https://github.com/modusintegration/ts-utils/blob/f2dfdaf/src/validation/creators.ts#L17">validation/creators.ts:17</a></li>
 								</ul>
 							</aside>
 							<h4 class="tsd-parameters-title">Parameters</h4>
 							<ul class="tsd-parameters">
 								<li>
-									<h5>validators: <span class="tsd-signature-type">any</span></h5>
-								</li>
-								<li>
-									<h5>variables: <span class="tsd-signature-type">any</span></h5>
-								</li>
-								<li>
-									<h5>selectors: <span class="tsd-signature-type">any</span></h5>
+									<h5>validators: <span class="tsd-signature-type">Validator</span><span class="tsd-signature-symbol">[]</span></h5>
 								</li>
 							</ul>
-							<h4 class="tsd-returns-title">Returns <span class="tsd-signature-symbol">{ </span>isRequired<span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">any</span><span class="tsd-signature-symbol">; </span>selectors<span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">any</span><span class="tsd-signature-symbol">; </span>validators<span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">any</span><span class="tsd-signature-symbol">; </span>variables<span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">any</span><span class="tsd-signature-symbol"> }</span></h4>
-							<ul class="tsd-parameters">
-								<li class="tsd-parameter">
-									<h5>is<wbr>Required<span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">any</span></h5>
-								</li>
-								<li class="tsd-parameter">
-									<h5>selectors<span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">any</span></h5>
-								</li>
-								<li class="tsd-parameter">
-									<h5>validators<span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">any</span></h5>
-								</li>
-								<li class="tsd-parameter">
-									<h5>variables<span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">any</span></h5>
-								</li>
-							</ul>
+							<h4 class="tsd-returns-title">Returns <span class="tsd-signature-type">Validation</span></h4>
 						</li>
 					</ul>
 				</section>
@@ -600,42 +271,22 @@
 					<a name="createvalidation" class="tsd-anchor"></a>
 					<h3><span class="tsd-flag ts-flagConst">Const</span> create<wbr>Validation</h3>
 					<ul class="tsd-signatures tsd-kind-function tsd-parent-kind-namespace">
-						<li class="tsd-signature tsd-kind-icon">create<wbr>Validation<span class="tsd-signature-symbol">(</span>validators<span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">any</span>, variables<span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">any</span>, selectors<span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">any</span><span class="tsd-signature-symbol">)</span><span class="tsd-signature-symbol">: </span><span class="tsd-signature-symbol">{ </span>isRequired<span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">any</span><span class="tsd-signature-symbol">; </span>selectors<span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">any</span><span class="tsd-signature-symbol">; </span>validators<span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">any</span><span class="tsd-signature-symbol">; </span>variables<span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">any</span><span class="tsd-signature-symbol"> }</span></li>
+						<li class="tsd-signature tsd-kind-icon">create<wbr>Validation<span class="tsd-signature-symbol">(</span>validators<span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">Validator</span><span class="tsd-signature-symbol">[]</span><span class="tsd-signature-symbol">)</span><span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">Validation</span></li>
 					</ul>
 					<ul class="tsd-descriptions">
 						<li class="tsd-description">
 							<aside class="tsd-sources">
 								<ul>
-									<li>Defined in <a href="https://github.com/modusintegration/ts-utils/blob/c4d86d4/src/validation/creators.js#L20">validation/creators.js:20</a></li>
+									<li>Defined in <a href="https://github.com/modusintegration/ts-utils/blob/f2dfdaf/src/validation/creators.ts#L16">validation/creators.ts:16</a></li>
 								</ul>
 							</aside>
 							<h4 class="tsd-parameters-title">Parameters</h4>
 							<ul class="tsd-parameters">
 								<li>
-									<h5>validators: <span class="tsd-signature-type">any</span></h5>
-								</li>
-								<li>
-									<h5>variables: <span class="tsd-signature-type">any</span></h5>
-								</li>
-								<li>
-									<h5>selectors: <span class="tsd-signature-type">any</span></h5>
+									<h5>validators: <span class="tsd-signature-type">Validator</span><span class="tsd-signature-symbol">[]</span></h5>
 								</li>
 							</ul>
-							<h4 class="tsd-returns-title">Returns <span class="tsd-signature-symbol">{ </span>isRequired<span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">any</span><span class="tsd-signature-symbol">; </span>selectors<span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">any</span><span class="tsd-signature-symbol">; </span>validators<span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">any</span><span class="tsd-signature-symbol">; </span>variables<span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">any</span><span class="tsd-signature-symbol"> }</span></h4>
-							<ul class="tsd-parameters">
-								<li class="tsd-parameter">
-									<h5>is<wbr>Required<span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">any</span></h5>
-								</li>
-								<li class="tsd-parameter">
-									<h5>selectors<span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">any</span></h5>
-								</li>
-								<li class="tsd-parameter">
-									<h5>validators<span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">any</span></h5>
-								</li>
-								<li class="tsd-parameter">
-									<h5>variables<span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">any</span></h5>
-								</li>
-							</ul>
+							<h4 class="tsd-returns-title">Returns <span class="tsd-signature-type">Validation</span></h4>
 						</li>
 					</ul>
 				</section>
@@ -643,39 +294,25 @@
 					<a name="createvalidator" class="tsd-anchor"></a>
 					<h3><span class="tsd-flag ts-flagConst">Const</span> create<wbr>Validator</h3>
 					<ul class="tsd-signatures tsd-kind-function tsd-parent-kind-namespace">
-						<li class="tsd-signature tsd-kind-icon">create<wbr>Validator<span class="tsd-signature-symbol">(</span>message<span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">any</span>, fn<span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">any</span>, appliesToTokens<span class="tsd-signature-symbol">?: </span><span class="tsd-signature-type">boolean</span><span class="tsd-signature-symbol">)</span><span class="tsd-signature-symbol">: </span><span class="tsd-signature-symbol">{ </span>appliesToTokens<span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">boolean</span><span class="tsd-signature-symbol">; </span>fn<span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">any</span><span class="tsd-signature-symbol">; </span>message<span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">any</span><span class="tsd-signature-symbol"> }</span></li>
+						<li class="tsd-signature tsd-kind-icon">create<wbr>Validator<span class="tsd-signature-symbol">(</span>message<span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">string</span>, fn<span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">ValidatorFunction</span><span class="tsd-signature-symbol">)</span><span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">Validator</span></li>
 					</ul>
 					<ul class="tsd-descriptions">
 						<li class="tsd-description">
 							<aside class="tsd-sources">
 								<ul>
-									<li>Defined in <a href="https://github.com/modusintegration/ts-utils/blob/c4d86d4/src/validation/creators.js#L2">validation/creators.js:2</a></li>
+									<li>Defined in <a href="https://github.com/modusintegration/ts-utils/blob/f2dfdaf/src/validation/creators.ts#L3">validation/creators.ts:3</a></li>
 								</ul>
 							</aside>
 							<h4 class="tsd-parameters-title">Parameters</h4>
 							<ul class="tsd-parameters">
 								<li>
-									<h5>message: <span class="tsd-signature-type">any</span></h5>
+									<h5>message: <span class="tsd-signature-type">string</span></h5>
 								</li>
 								<li>
-									<h5>fn: <span class="tsd-signature-type">any</span></h5>
-								</li>
-								<li>
-									<h5>appliesToTokens: <span class="tsd-signature-type">boolean</span><span class="tsd-signature-symbol"> = false</span></h5>
+									<h5>fn: <span class="tsd-signature-type">ValidatorFunction</span></h5>
 								</li>
 							</ul>
-							<h4 class="tsd-returns-title">Returns <span class="tsd-signature-symbol">{ </span>appliesToTokens<span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">boolean</span><span class="tsd-signature-symbol">; </span>fn<span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">any</span><span class="tsd-signature-symbol">; </span>message<span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">any</span><span class="tsd-signature-symbol"> }</span></h4>
-							<ul class="tsd-parameters">
-								<li class="tsd-parameter">
-									<h5>applies<wbr>ToTokens<span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">boolean</span></h5>
-								</li>
-								<li class="tsd-parameter">
-									<h5>fn<span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">any</span></h5>
-								</li>
-								<li class="tsd-parameter">
-									<h5>message<span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">any</span></h5>
-								</li>
-							</ul>
+							<h4 class="tsd-returns-title">Returns <span class="tsd-signature-type">Validator</span></h4>
 						</li>
 					</ul>
 				</section>
@@ -683,13 +320,13 @@
 					<a name="getfieldisvalid" class="tsd-anchor"></a>
 					<h3><span class="tsd-flag ts-flagConst">Const</span> get<wbr>Field<wbr>IsValid</h3>
 					<ul class="tsd-signatures tsd-kind-function tsd-parent-kind-namespace">
-						<li class="tsd-signature tsd-kind-icon">get<wbr>Field<wbr>IsValid<span class="tsd-signature-symbol">(</span>field<span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">string</span><span class="tsd-signature-symbol">)</span><span class="tsd-signature-symbol">: </span><span class="tsd-signature-symbol">(</span>result<span class="tsd-signature-symbol">: </span><a href="../interfaces/validation.validationresults.html" class="tsd-signature-type" data-tsd-kind="Interface">ValidationResults</a><span class="tsd-signature-symbol">)</span><span class="tsd-signature-symbol"> =&gt; </span><span class="tsd-signature-type">boolean</span></li>
+						<li class="tsd-signature tsd-kind-icon">get<wbr>Field<wbr>IsValid<span class="tsd-signature-symbol">(</span>field<span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">string</span><span class="tsd-signature-symbol">)</span><span class="tsd-signature-symbol">: </span>&lt;T&gt;<span class="tsd-signature-symbol">(</span>result<span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">T</span><span class="tsd-signature-symbol">)</span><span class="tsd-signature-symbol"> =&gt; </span><span class="tsd-signature-type">boolean</span></li>
 					</ul>
 					<ul class="tsd-descriptions">
 						<li class="tsd-description">
 							<aside class="tsd-sources">
 								<ul>
-									<li>Defined in <a href="https://github.com/modusintegration/ts-utils/blob/c4d86d4/src/validation/getters.ts#L15">validation/getters.ts:15</a></li>
+									<li>Defined in <a href="https://github.com/modusintegration/ts-utils/blob/f2dfdaf/src/validation/getters.ts#L18">validation/getters.ts:18</a></li>
 								</ul>
 							</aside>
 							<h4 class="tsd-parameters-title">Parameters</h4>
@@ -698,18 +335,24 @@
 									<h5>field: <span class="tsd-signature-type">string</span></h5>
 								</li>
 							</ul>
-							<h4 class="tsd-returns-title">Returns <span class="tsd-signature-symbol">(</span>result<span class="tsd-signature-symbol">: </span><a href="../interfaces/validation.validationresults.html" class="tsd-signature-type" data-tsd-kind="Interface">ValidationResults</a><span class="tsd-signature-symbol">)</span><span class="tsd-signature-symbol"> =&gt; </span><span class="tsd-signature-type">boolean</span></h4>
+							<h4 class="tsd-returns-title">Returns &lt;T&gt;<span class="tsd-signature-symbol">(</span>result<span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">T</span><span class="tsd-signature-symbol">)</span><span class="tsd-signature-symbol"> =&gt; </span><span class="tsd-signature-type">boolean</span></h4>
 							<ul class="tsd-parameters">
 								<li class="tsd-parameter-signature">
-									<ul class="tsd-signatures tsd-kind-type-literal">
-										<li class="tsd-signature tsd-kind-icon"><span class="tsd-signature-symbol">(</span>result<span class="tsd-signature-symbol">: </span><a href="../interfaces/validation.validationresults.html" class="tsd-signature-type" data-tsd-kind="Interface">ValidationResults</a><span class="tsd-signature-symbol">)</span><span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">boolean</span></li>
+									<ul class="tsd-signatures tsd-kind-type-literal tsd-has-type-parameter">
+										<li class="tsd-signature tsd-kind-icon">&lt;T&gt;<span class="tsd-signature-symbol">(</span>result<span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">T</span><span class="tsd-signature-symbol">)</span><span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">boolean</span></li>
 									</ul>
 									<ul class="tsd-descriptions">
 										<li class="tsd-description">
+											<h4 class="tsd-type-parameters-title">Type parameters</h4>
+											<ul class="tsd-type-parameters">
+												<li>
+													<h4>T<span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">ValidationResults</span><span class="tsd-signature-symbol">&lt;</span><span class="tsd-signature-type">unknown</span><span class="tsd-signature-symbol">&gt;</span></h4>
+												</li>
+											</ul>
 											<h4 class="tsd-parameters-title">Parameters</h4>
 											<ul class="tsd-parameters">
 												<li>
-													<h5>result: <a href="../interfaces/validation.validationresults.html" class="tsd-signature-type" data-tsd-kind="Interface">ValidationResults</a></h5>
+													<h5>result: <span class="tsd-signature-type">T</span></h5>
 												</li>
 											</ul>
 											<h4 class="tsd-returns-title">Returns <span class="tsd-signature-type">boolean</span></h4>
@@ -724,13 +367,13 @@
 					<a name="getfieldmessages" class="tsd-anchor"></a>
 					<h3><span class="tsd-flag ts-flagConst">Const</span> get<wbr>Field<wbr>Messages</h3>
 					<ul class="tsd-signatures tsd-kind-function tsd-parent-kind-namespace">
-						<li class="tsd-signature tsd-kind-icon">get<wbr>Field<wbr>Messages<span class="tsd-signature-symbol">(</span>field<span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">string</span><span class="tsd-signature-symbol">)</span><span class="tsd-signature-symbol">: </span><span class="tsd-signature-symbol">(</span>result<span class="tsd-signature-symbol">: </span><a href="../interfaces/validation.validationresults.html" class="tsd-signature-type" data-tsd-kind="Interface">ValidationResults</a><span class="tsd-signature-symbol">)</span><span class="tsd-signature-symbol"> =&gt; </span><a href="../interfaces/validation.validationmessage.html" class="tsd-signature-type" data-tsd-kind="Interface">ValidationMessage</a><span class="tsd-signature-symbol">[]</span></li>
+						<li class="tsd-signature tsd-kind-icon">get<wbr>Field<wbr>Messages<span class="tsd-signature-symbol">(</span>field<span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">string</span><span class="tsd-signature-symbol">)</span><span class="tsd-signature-symbol">: </span>&lt;T&gt;<span class="tsd-signature-symbol">(</span>result<span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">T</span><span class="tsd-signature-symbol">)</span><span class="tsd-signature-symbol"> =&gt; </span><a href="../interfaces/validation.validationmessage.html" class="tsd-signature-type" data-tsd-kind="Interface">ValidationMessage</a><span class="tsd-signature-symbol">[]</span></li>
 					</ul>
 					<ul class="tsd-descriptions">
 						<li class="tsd-description">
 							<aside class="tsd-sources">
 								<ul>
-									<li>Defined in <a href="https://github.com/modusintegration/ts-utils/blob/c4d86d4/src/validation/getters.ts#L10">validation/getters.ts:10</a></li>
+									<li>Defined in <a href="https://github.com/modusintegration/ts-utils/blob/f2dfdaf/src/validation/getters.ts#L11">validation/getters.ts:11</a></li>
 								</ul>
 							</aside>
 							<h4 class="tsd-parameters-title">Parameters</h4>
@@ -739,18 +382,24 @@
 									<h5>field: <span class="tsd-signature-type">string</span></h5>
 								</li>
 							</ul>
-							<h4 class="tsd-returns-title">Returns <span class="tsd-signature-symbol">(</span>result<span class="tsd-signature-symbol">: </span><a href="../interfaces/validation.validationresults.html" class="tsd-signature-type" data-tsd-kind="Interface">ValidationResults</a><span class="tsd-signature-symbol">)</span><span class="tsd-signature-symbol"> =&gt; </span><a href="../interfaces/validation.validationmessage.html" class="tsd-signature-type" data-tsd-kind="Interface">ValidationMessage</a><span class="tsd-signature-symbol">[]</span></h4>
+							<h4 class="tsd-returns-title">Returns &lt;T&gt;<span class="tsd-signature-symbol">(</span>result<span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">T</span><span class="tsd-signature-symbol">)</span><span class="tsd-signature-symbol"> =&gt; </span><a href="../interfaces/validation.validationmessage.html" class="tsd-signature-type" data-tsd-kind="Interface">ValidationMessage</a><span class="tsd-signature-symbol">[]</span></h4>
 							<ul class="tsd-parameters">
 								<li class="tsd-parameter-signature">
-									<ul class="tsd-signatures tsd-kind-type-literal">
-										<li class="tsd-signature tsd-kind-icon"><span class="tsd-signature-symbol">(</span>result<span class="tsd-signature-symbol">: </span><a href="../interfaces/validation.validationresults.html" class="tsd-signature-type" data-tsd-kind="Interface">ValidationResults</a><span class="tsd-signature-symbol">)</span><span class="tsd-signature-symbol">: </span><a href="../interfaces/validation.validationmessage.html" class="tsd-signature-type" data-tsd-kind="Interface">ValidationMessage</a><span class="tsd-signature-symbol">[]</span></li>
+									<ul class="tsd-signatures tsd-kind-type-literal tsd-has-type-parameter">
+										<li class="tsd-signature tsd-kind-icon">&lt;T&gt;<span class="tsd-signature-symbol">(</span>result<span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">T</span><span class="tsd-signature-symbol">)</span><span class="tsd-signature-symbol">: </span><a href="../interfaces/validation.validationmessage.html" class="tsd-signature-type" data-tsd-kind="Interface">ValidationMessage</a><span class="tsd-signature-symbol">[]</span></li>
 									</ul>
 									<ul class="tsd-descriptions">
 										<li class="tsd-description">
+											<h4 class="tsd-type-parameters-title">Type parameters</h4>
+											<ul class="tsd-type-parameters">
+												<li>
+													<h4>T<span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">ValidationResults</span><span class="tsd-signature-symbol">&lt;</span><span class="tsd-signature-type">unknown</span><span class="tsd-signature-symbol">&gt;</span></h4>
+												</li>
+											</ul>
 											<h4 class="tsd-parameters-title">Parameters</h4>
 											<ul class="tsd-parameters">
 												<li>
-													<h5>result: <a href="../interfaces/validation.validationresults.html" class="tsd-signature-type" data-tsd-kind="Interface">ValidationResults</a></h5>
+													<h5>result: <span class="tsd-signature-type">T</span></h5>
 												</li>
 											</ul>
 											<h4 class="tsd-returns-title">Returns <a href="../interfaces/validation.validationmessage.html" class="tsd-signature-type" data-tsd-kind="Interface">ValidationMessage</a><span class="tsd-signature-symbol">[]</span></h4>
@@ -761,95 +410,96 @@
 						</li>
 					</ul>
 				</section>
-				<section class="tsd-panel tsd-member tsd-kind-function tsd-parent-kind-namespace">
+				<section class="tsd-panel tsd-member tsd-kind-function tsd-parent-kind-namespace tsd-has-type-parameter">
 					<a name="getisvalid" class="tsd-anchor"></a>
 					<h3><span class="tsd-flag ts-flagConst">Const</span> get<wbr>IsValid</h3>
-					<ul class="tsd-signatures tsd-kind-function tsd-parent-kind-namespace">
-						<li class="tsd-signature tsd-kind-icon">get<wbr>IsValid<span class="tsd-signature-symbol">(</span>result<span class="tsd-signature-symbol">: </span><a href="../interfaces/validation.validationresults.html" class="tsd-signature-type" data-tsd-kind="Interface">ValidationResults</a><span class="tsd-signature-symbol">)</span><span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">boolean</span></li>
+					<ul class="tsd-signatures tsd-kind-function tsd-parent-kind-namespace tsd-has-type-parameter">
+						<li class="tsd-signature tsd-kind-icon">get<wbr>IsValid&lt;T&gt;<span class="tsd-signature-symbol">(</span>result<span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">T</span><span class="tsd-signature-symbol">)</span><span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">boolean</span></li>
 					</ul>
 					<ul class="tsd-descriptions">
 						<li class="tsd-description">
 							<aside class="tsd-sources">
 								<ul>
-									<li>Defined in <a href="https://github.com/modusintegration/ts-utils/blob/c4d86d4/src/validation/getters.ts#L6">validation/getters.ts:6</a></li>
+									<li>Defined in <a href="https://github.com/modusintegration/ts-utils/blob/f2dfdaf/src/validation/getters.ts#L7">validation/getters.ts:7</a></li>
 								</ul>
 							</aside>
+							<h4 class="tsd-type-parameters-title">Type parameters</h4>
+							<ul class="tsd-type-parameters">
+								<li>
+									<h4>T<span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">ValidationResults</span><span class="tsd-signature-symbol">&lt;</span><span class="tsd-signature-type">unknown</span><span class="tsd-signature-symbol">&gt;</span></h4>
+								</li>
+							</ul>
 							<h4 class="tsd-parameters-title">Parameters</h4>
 							<ul class="tsd-parameters">
 								<li>
-									<h5>result: <a href="../interfaces/validation.validationresults.html" class="tsd-signature-type" data-tsd-kind="Interface">ValidationResults</a></h5>
+									<h5>result: <span class="tsd-signature-type">T</span></h5>
 								</li>
 							</ul>
 							<h4 class="tsd-returns-title">Returns <span class="tsd-signature-type">boolean</span></h4>
 						</li>
 					</ul>
 				</section>
-				<section class="tsd-panel tsd-member tsd-kind-function tsd-parent-kind-namespace">
+				<section class="tsd-panel tsd-member tsd-kind-function tsd-parent-kind-namespace tsd-has-type-parameter">
 					<a name="getmessages" class="tsd-anchor"></a>
 					<h3><span class="tsd-flag ts-flagConst">Const</span> get<wbr>Messages</h3>
-					<ul class="tsd-signatures tsd-kind-function tsd-parent-kind-namespace">
-						<li class="tsd-signature tsd-kind-icon">get<wbr>Messages<span class="tsd-signature-symbol">(</span>result<span class="tsd-signature-symbol">: </span><a href="../interfaces/validation.validationresults.html" class="tsd-signature-type" data-tsd-kind="Interface">ValidationResults</a><span class="tsd-signature-symbol">)</span><span class="tsd-signature-symbol">: </span><a href="../interfaces/validation.validationmessage.html" class="tsd-signature-type" data-tsd-kind="Interface">ValidationMessage</a><span class="tsd-signature-symbol">[]</span></li>
+					<ul class="tsd-signatures tsd-kind-function tsd-parent-kind-namespace tsd-has-type-parameter">
+						<li class="tsd-signature tsd-kind-icon">get<wbr>Messages&lt;T&gt;<span class="tsd-signature-symbol">(</span>result<span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">T</span><span class="tsd-signature-symbol">)</span><span class="tsd-signature-symbol">: </span><a href="../interfaces/validation.validationmessage.html" class="tsd-signature-type" data-tsd-kind="Interface">ValidationMessage</a><span class="tsd-signature-symbol">[]</span></li>
 					</ul>
 					<ul class="tsd-descriptions">
 						<li class="tsd-description">
 							<aside class="tsd-sources">
 								<ul>
-									<li>Defined in <a href="https://github.com/modusintegration/ts-utils/blob/c4d86d4/src/validation/getters.ts#L4">validation/getters.ts:4</a></li>
+									<li>Defined in <a href="https://github.com/modusintegration/ts-utils/blob/f2dfdaf/src/validation/getters.ts#L4">validation/getters.ts:4</a></li>
 								</ul>
 							</aside>
+							<h4 class="tsd-type-parameters-title">Type parameters</h4>
+							<ul class="tsd-type-parameters">
+								<li>
+									<h4>T<span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">ValidationResults</span><span class="tsd-signature-symbol">&lt;</span><span class="tsd-signature-type">unknown</span><span class="tsd-signature-symbol">&gt;</span></h4>
+								</li>
+							</ul>
 							<h4 class="tsd-parameters-title">Parameters</h4>
 							<ul class="tsd-parameters">
 								<li>
-									<h5>result: <a href="../interfaces/validation.validationresults.html" class="tsd-signature-type" data-tsd-kind="Interface">ValidationResults</a></h5>
+									<h5>result: <span class="tsd-signature-type">T</span></h5>
 								</li>
 							</ul>
 							<h4 class="tsd-returns-title">Returns <a href="../interfaces/validation.validationmessage.html" class="tsd-signature-type" data-tsd-kind="Interface">ValidationMessage</a><span class="tsd-signature-symbol">[]</span></h4>
 						</li>
 					</ul>
 				</section>
-				<section class="tsd-panel tsd-member tsd-kind-function tsd-parent-kind-namespace">
+				<section class="tsd-panel tsd-member tsd-kind-function tsd-parent-kind-namespace tsd-has-type-parameter">
 					<a name="tovalidationresult" class="tsd-anchor"></a>
 					<h3><span class="tsd-flag ts-flagConst">Const</span> to<wbr>Validation<wbr>Result</h3>
-					<ul class="tsd-signatures tsd-kind-function tsd-parent-kind-namespace">
-						<li class="tsd-signature tsd-kind-icon">to<wbr>Validation<wbr>Result<span class="tsd-signature-symbol">(</span>model<span class="tsd-signature-symbol">?: </span><span class="tsd-signature-symbol">{}</span>, validations<span class="tsd-signature-symbol">?: </span><span class="tsd-signature-symbol">{}</span><span class="tsd-signature-symbol">)</span><span class="tsd-signature-symbol">: </span><span class="tsd-signature-symbol">{ </span>fields<span class="tsd-signature-symbol">: </span><span class="tsd-signature-symbol">{}</span><span class="tsd-signature-symbol">; </span>isValid<span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">boolean</span><span class="tsd-signature-symbol">; </span>messages<span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">any</span><span class="tsd-signature-symbol">[]</span><span class="tsd-signature-symbol">; </span>tokens<span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">any</span><span class="tsd-signature-symbol">[]</span><span class="tsd-signature-symbol"> }</span></li>
+					<ul class="tsd-signatures tsd-kind-function tsd-parent-kind-namespace tsd-has-type-parameter">
+						<li class="tsd-signature tsd-kind-icon">to<wbr>Validation<wbr>Result&lt;T, S&gt;<span class="tsd-signature-symbol">(</span>model<span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">T</span>, validations<span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">S</span><span class="tsd-signature-symbol">)</span><span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">ValidationResults</span><span class="tsd-signature-symbol">&lt;</span><span class="tsd-signature-type">S</span><span class="tsd-signature-symbol">&gt;</span></li>
 					</ul>
 					<ul class="tsd-descriptions">
 						<li class="tsd-description">
 							<aside class="tsd-sources">
 								<ul>
-									<li>Defined in <a href="https://github.com/modusintegration/ts-utils/blob/c4d86d4/src/validation/runner.js#L147">validation/runner.js:147</a></li>
+									<li>Defined in <a href="https://github.com/modusintegration/ts-utils/blob/f2dfdaf/src/validation/runner.ts#L45">validation/runner.ts:45</a></li>
 								</ul>
 							</aside>
+							<h4 class="tsd-type-parameters-title">Type parameters</h4>
+							<ul class="tsd-type-parameters">
+								<li>
+									<h4>T<span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">NestedRecord</span></h4>
+								</li>
+								<li>
+									<h4>S<span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">ValidationStructure</span><span class="tsd-signature-symbol">&lt;</span><span class="tsd-signature-type">T</span><span class="tsd-signature-symbol">&gt;</span></h4>
+								</li>
+							</ul>
 							<h4 class="tsd-parameters-title">Parameters</h4>
 							<ul class="tsd-parameters">
 								<li>
-									<h5>model: <span class="tsd-signature-symbol">{}</span><span class="tsd-signature-symbol"> = {}</span></h5>
-									<ul class="tsd-parameters">
-									</ul>
+									<h5>model: <span class="tsd-signature-type">T</span></h5>
 								</li>
 								<li>
-									<h5>validations: <span class="tsd-signature-symbol">{}</span><span class="tsd-signature-symbol"> = {}</span></h5>
-									<ul class="tsd-parameters">
-									</ul>
+									<h5>validations: <span class="tsd-signature-type">S</span></h5>
 								</li>
 							</ul>
-							<h4 class="tsd-returns-title">Returns <span class="tsd-signature-symbol">{ </span>fields<span class="tsd-signature-symbol">: </span><span class="tsd-signature-symbol">{}</span><span class="tsd-signature-symbol">; </span>isValid<span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">boolean</span><span class="tsd-signature-symbol">; </span>messages<span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">any</span><span class="tsd-signature-symbol">[]</span><span class="tsd-signature-symbol">; </span>tokens<span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">any</span><span class="tsd-signature-symbol">[]</span><span class="tsd-signature-symbol"> }</span></h4>
-							<ul class="tsd-parameters">
-								<li class="tsd-parameter">
-									<h5>fields<span class="tsd-signature-symbol">: </span><span class="tsd-signature-symbol">{}</span></h5>
-									<ul class="tsd-parameters">
-									</ul>
-								</li>
-								<li class="tsd-parameter">
-									<h5>is<wbr>Valid<span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">boolean</span></h5>
-								</li>
-								<li class="tsd-parameter">
-									<h5>messages<span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">any</span><span class="tsd-signature-symbol">[]</span></h5>
-								</li>
-								<li class="tsd-parameter">
-									<h5>tokens<span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">any</span><span class="tsd-signature-symbol">[]</span></h5>
-								</li>
-							</ul>
+							<h4 class="tsd-returns-title">Returns <span class="tsd-signature-type">ValidationResults</span><span class="tsd-signature-symbol">&lt;</span><span class="tsd-signature-type">S</span><span class="tsd-signature-symbol">&gt;</span></h4>
 						</li>
 					</ul>
 				</section>
@@ -857,39 +507,25 @@
 					<a name="validate" class="tsd-anchor"></a>
 					<h3><span class="tsd-flag ts-flagConst">Const</span> validate</h3>
 					<ul class="tsd-signatures tsd-kind-function tsd-parent-kind-namespace">
-						<li class="tsd-signature tsd-kind-icon">validate<span class="tsd-signature-symbol">(</span>initialValue<span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">any</span>, validation<span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">any</span><span class="tsd-signature-symbol">)</span><span class="tsd-signature-symbol">: </span><span class="tsd-signature-symbol">{ </span>isRequired<span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">any</span><span class="tsd-signature-symbol">; </span>isValid<span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">boolean</span><span class="tsd-signature-symbol">; </span>messages<span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">any</span><span class="tsd-signature-symbol">; </span>tokens<span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">any</span><span class="tsd-signature-symbol"> }</span></li>
+						<li class="tsd-signature tsd-kind-icon">validate<span class="tsd-signature-symbol">(</span>value<span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">Value</span>, validation<span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">Validation</span><span class="tsd-signature-symbol">)</span><span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">ValidationResult</span></li>
 					</ul>
 					<ul class="tsd-descriptions">
 						<li class="tsd-description">
 							<aside class="tsd-sources">
 								<ul>
-									<li>Defined in <a href="https://github.com/modusintegration/ts-utils/blob/c4d86d4/src/validation/runner.js#L60">validation/runner.js:60</a></li>
+									<li>Defined in <a href="https://github.com/modusintegration/ts-utils/blob/f2dfdaf/src/validation/runner.ts#L12">validation/runner.ts:12</a></li>
 								</ul>
 							</aside>
 							<h4 class="tsd-parameters-title">Parameters</h4>
 							<ul class="tsd-parameters">
 								<li>
-									<h5>initialValue: <span class="tsd-signature-type">any</span></h5>
+									<h5>value: <span class="tsd-signature-type">Value</span></h5>
 								</li>
 								<li>
-									<h5>validation: <span class="tsd-signature-type">any</span></h5>
+									<h5>validation: <span class="tsd-signature-type">Validation</span></h5>
 								</li>
 							</ul>
-							<h4 class="tsd-returns-title">Returns <span class="tsd-signature-symbol">{ </span>isRequired<span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">any</span><span class="tsd-signature-symbol">; </span>isValid<span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">boolean</span><span class="tsd-signature-symbol">; </span>messages<span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">any</span><span class="tsd-signature-symbol">; </span>tokens<span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">any</span><span class="tsd-signature-symbol"> }</span></h4>
-							<ul class="tsd-parameters">
-								<li class="tsd-parameter">
-									<h5>is<wbr>Required<span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">any</span></h5>
-								</li>
-								<li class="tsd-parameter">
-									<h5>is<wbr>Valid<span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">boolean</span></h5>
-								</li>
-								<li class="tsd-parameter">
-									<h5>messages<span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">any</span></h5>
-								</li>
-								<li class="tsd-parameter">
-									<h5>tokens<span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">any</span></h5>
-								</li>
-							</ul>
+							<h4 class="tsd-returns-title">Returns <span class="tsd-signature-type">ValidationResult</span></h4>
 						</li>
 					</ul>
 				</section>
@@ -930,16 +566,7 @@
 			<nav class="tsd-navigation secondary menu-sticky">
 				<ul class="before-current">
 					<li class=" tsd-kind-interface tsd-parent-kind-namespace">
-						<a href="../interfaces/validation.validationfield.html" class="tsd-kind-icon">Validation<wbr>Field</a>
-					</li>
-					<li class=" tsd-kind-interface tsd-parent-kind-namespace">
 						<a href="../interfaces/validation.validationmessage.html" class="tsd-kind-icon">Validation<wbr>Message</a>
-					</li>
-					<li class=" tsd-kind-interface tsd-parent-kind-namespace">
-						<a href="../interfaces/validation.validationresults.html" class="tsd-kind-icon">Validation<wbr>Results</a>
-					</li>
-					<li class=" tsd-kind-type-alias tsd-parent-kind-namespace">
-						<a href="validation.html#validationfields" class="tsd-kind-icon">Validation<wbr>Fields</a>
 					</li>
 					<li class=" tsd-kind-variable tsd-parent-kind-namespace">
 						<a href="validation.html#vd" class="tsd-kind-icon">vd</a>
@@ -959,13 +586,13 @@
 					<li class=" tsd-kind-function tsd-parent-kind-namespace">
 						<a href="validation.html#getfieldmessages" class="tsd-kind-icon">get<wbr>Field<wbr>Messages</a>
 					</li>
-					<li class=" tsd-kind-function tsd-parent-kind-namespace">
+					<li class=" tsd-kind-function tsd-parent-kind-namespace tsd-has-type-parameter">
 						<a href="validation.html#getisvalid" class="tsd-kind-icon">get<wbr>IsValid</a>
 					</li>
-					<li class=" tsd-kind-function tsd-parent-kind-namespace">
+					<li class=" tsd-kind-function tsd-parent-kind-namespace tsd-has-type-parameter">
 						<a href="validation.html#getmessages" class="tsd-kind-icon">get<wbr>Messages</a>
 					</li>
-					<li class=" tsd-kind-function tsd-parent-kind-namespace">
+					<li class=" tsd-kind-function tsd-parent-kind-namespace tsd-has-type-parameter">
 						<a href="validation.html#tovalidationresult" class="tsd-kind-icon">to<wbr>Validation<wbr>Result</a>
 					</li>
 					<li class=" tsd-kind-function tsd-parent-kind-namespace">
