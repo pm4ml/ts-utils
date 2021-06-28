@@ -84,7 +84,7 @@ describe('tests validating a value set', () => {
       even: 7,
       gt10: 25,
     };
-    const result = toValidationResult(validators, values);
+    const result = toValidationResult(values, validators);
     expect(result).toBeInstanceOf(Object);
     expect(result).toHaveProperty('messages');
     expect(result).toHaveProperty('isValid');
@@ -105,17 +105,25 @@ describe('tests validating a value set', () => {
       odd: createValidation([oddValidator]),
       even: createValidation([evenValidator]),
       gt10: createValidation([gt10Validator]),
+      test: {
+        nested: createValidation([oddValidator]),
+      },
     };
     const values = {
       odd: 3,
       even: 4,
       gt10: 25,
+      a: 2,
+      test: {
+        nested: 3,
+      },
     };
 
     const result = toValidationResult(values, validators);
+
     expect(result).toBeInstanceOf(Object);
     expect(result.isValid).toBe(true);
-    expect(result.messages).toHaveLength(3);
+    expect(result.messages).toHaveLength(4);
     expect(result.fields.odd.isValid).toBe(true);
     expect(result.fields.odd.messages).toHaveLength(1);
     expect(result.fields.even.isValid).toBe(true);
