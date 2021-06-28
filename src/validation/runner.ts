@@ -84,7 +84,6 @@ const toValidationResult = <T extends NestedRecord, S extends ValidationStructur
   return {
     isValid: allIsValid,
     messages: allMessages,
-    /* @typescript-eslint / ban-ts-comment */
     // @ts-ignore
     fields: Object.keys(fields).length ? fields : undefined,
   };
