@@ -25,17 +25,18 @@ export type NestedRecord = { [member: string]: ValueOrNestedRecord };
 export type ValueOrNestedRecord = Value | NestedRecord;
 
 export type ValidationStructure<T extends NestedRecord = Record<string, never>> = {
-  [Property in keyof Partial<T>]: T[Property] extends NestedRecord
-    ? ValidationStructure<T[Property]> | undefined
-    : Validation | undefined;
+  [Property in keyof Partial<T>]?: T[Property] extends NestedRecord
+    ? ValidationStructure<T[Property]>
+    : Validation;
 };
 
 export type ValidationResults<T> = {
   isValid: boolean;
-  isRequired: boolean;
   messages: ValidationMessage[];
   fields: {
-    [Property in keyof T]: ValidationResults<T[Property]>;
+    [Property in keyof T]: T[Property] extends Validation
+      ? ValidationResult
+      : ValidationResults<T[Property]>;
   };
 };
 
@@ -43,5 +44,4 @@ export type ValidationResult = {
   isValid: boolean;
   isRequired: boolean;
   messages: ValidationMessage[];
-  fields: undefined;
 };

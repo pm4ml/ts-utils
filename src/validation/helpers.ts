@@ -4,8 +4,9 @@ export const isNull = (item: unknown): boolean => item === null;
 export const isUndefined = (item: unknown): boolean => item === undefined;
 export const isObject = (item: unknown): boolean => typeof item === 'object';
 
-export const isPrimitiveObject = (item: Value | NestedRecord): item is NestedRecord =>
-  isObject(item) && !Array.isArray(item);
+export const isNestedValue = (item: Value | NestedRecord): item is NestedRecord => {
+  return isObject(item) && !Array.isArray(item);
+};
 
 export const isValidationUndefined = (
   validation: Validation | ValidationStructure<NestedRecord> | undefined
@@ -13,8 +14,8 @@ export const isValidationUndefined = (
   return validation === undefined;
 };
 
-export const isValidationObject = <T extends NestedRecord = Record<string, never>>(
-  validation: Validation | ValidationStructure<T> | undefined
+export const isNestedValidation = <T extends NestedRecord = Record<string, never>>(
+  validation: Validation | ValidationStructure<T>
 ): validation is ValidationStructure<T> => {
-  return typeof isObject(validation?.validators) && !Array.isArray(validation?.validators);
+  return isObject(validation) && validation.validators === undefined;
 };
