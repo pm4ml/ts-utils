@@ -18,7 +18,7 @@ const validate = (value: Value, validation: Validation): ValidationResult => {
     messages = validators.map(({ message }) => ({ active: false, message }));
 
     validators.forEach((validator, index) => {
-      if (helpers.isUndefined(value)) {
+      if (helpers.isUndefined(value) || helpers.isNull(value)) {
         isValid = !isRequired;
         messages[index].active = undefined;
       } else {
@@ -30,15 +30,14 @@ const validate = (value: Value, validation: Validation): ValidationResult => {
       }
     });
   }
-  return { messages, isValid, isRequired, fields: undefined };
+  return { messages, isValid, isRequired };
 };
 
-function invalidValidationResult(isRequired: boolean) {
+function buildValidationResult(isRequired: boolean, isValid: boolean): ValidationResult {
   return {
     isRequired,
-    isValid: false,
+    isValid,
     messages: [],
-    fields: undefined,
   };
 }
 
@@ -47,48 +46,53 @@ const toValidationResult = <T extends NestedRecord, S extends ValidationStructur
   validations: S
 ): ValidationResults<typeof validations> => {
   const allMessages: ValidationMessage[] = [];
-  let allIsValid = true;
+  let everyIsValid = true;
   const fields = {};
 
   Object.keys(validations || {}).forEach((field) => {
-    if (!helpers.isNull(model)) {
-      const value = model[field];
-      const validation = validations?.[field];
+    const value = model[field];
+    const validation = validations?.[field];
 
-      let result: ValidationResults<typeof validation> = invalidValidationResult(false);
+    let result;
 
-      if (helpers.isValidationUndefined(validation)) {
-        result = invalidValidationResult(!helpers.isValidationUndefined(validation));
-      } else if (helpers.isPrimitiveObject(value)) {
-        if (helpers.isValidationObject(validation)) {
-          result = toValidationResult(value, validation);
-        } else {
-          result = invalidValidationResult(!helpers.isValidationUndefined(validation));
-        }
-      } else if (helpers.isValidationObject(validation)) {
-        result = invalidValidationResult(!helpers.isValidationUndefined(validation));
-      } else {
-        // @ts-ignore
-        result = validate(value, validation);
-      }
-
-      if (!result.isValid) {
-        allIsValid = false;
-      }
-
-      allMessages.push(...result.messages);
-
-      Object.assign(fields, { [field]: result });
+    if (helpers.isValidationUndefined(validation)) {
+      // no validation, valid!
+      result = buildValidationResult(false, true);
+    } else if (helpers.isNestedValue(value) && helpers.isNestedValidation(validation)) {
+      // nested validation
+      result = toValidationResult(value, validation);
+    } else if (!helpers.isNestedValue(value) && !helpers.isNestedValidation(validation)) {
+      // validate single field
+      result = validate(value, validation as Validation);
+    } else {
+      // validation and value structure do not match, invalid
+      result = buildValidationResult(true, false);
     }
+
+    // it only takes one to make the validation invalid
+    if (!result.isValid) {
+      everyIsValid = false;
+    }
+
+    // add all messages for this object
+    allMessages.push(...result.messages);
+
+    // assign the results to the field
+    Object.assign(fields, { [field]: result });
   });
 
   return {
-    isValid: allIsValid,
+    isValid: everyIsValid,
     messages: allMessages,
     // @ts-ignore
-    fields: Object.keys(fields).length ? fields : undefined,
+    fields,
   };
 };
+
+// const runners = {
+//   obj_obj:
+//   value_value:
+// }
 
 export { validate };
 export default toValidationResult;
