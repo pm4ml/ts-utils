@@ -18,7 +18,7 @@ const validate = (value: Value, validation: Validation): ValidationResult => {
     messages = validators.map(({ message }) => ({ active: false, message }));
 
     validators.forEach((validator, index) => {
-      if (helpers.isUndefined(value) || helpers.isNull(value)) {
+      if (helpers.isUndefined(value) || helpers.isNull(value) || helpers.isEmpty(value)) {
         isValid = !isRequired;
         messages[index].active = undefined;
       } else {
