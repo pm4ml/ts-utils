@@ -1,6 +1,6 @@
 {
   "name": "@modusbox/ts-utils",
-  "version": "0.0.2-8",
+  "version": "0.0.2-9",
   "main": "lib/index.js",
   "license": "MIT",
   "types": "lib/index.d.ts",
