@@ -16,8 +16,39 @@ const gt10Validator = createValidator(gt10Message, gt10fn);
 
 const testValidation = createValidation([oddValidator, gt10Validator]);
 
-describe('tests validating a value', () => {
-  it('should return hasWarnings and isValid object keys', () => {
+describe('tests the optional validation function', () => {
+  it('should result in a successfull validation and produce non-active messages value is undefined', () => {
+    const evenValidation = createOptionalValidation([evenValidator]);
+    const result = validate(undefined, evenValidation);
+
+    expect(result.messages).toHaveLength(1);
+    expect(result.messages[0].message).toBe(evenMessage);
+    expect(result.messages[0].active).toBeUndefined();
+    expect(result.isValid).toBe(true);
+  });
+
+  it('should result in a successfull validation and produce non-active messages value is empty ""', () => {
+    const evenValidation = createOptionalValidation([evenValidator]);
+    const result = validate('', evenValidation);
+
+    expect(result.messages).toHaveLength(1);
+    expect(result.messages[0].message).toBe(evenMessage);
+    expect(result.messages[0].active).toBeUndefined();
+    expect(result.isValid).toBe(true);
+  });
+
+  it('should result in a failed validation and produce active messages', () => {
+    const evenValidation = createOptionalValidation([evenValidator]);
+    const result = validate(5, evenValidation);
+    expect(result.messages).toHaveLength(1);
+    expect(result.messages[0].message).toBe(evenMessage);
+    expect(result.messages[0].active).toBe(true);
+    expect(result.isValid).toBe(false);
+  });
+});
+
+describe('tests the strict validation', () => {
+  it('should return the correct result object', () => {
     const result = validate(10, testValidation);
     expect(result).toBeInstanceOf(Object);
     expect(result).toHaveProperty('messages');
@@ -29,18 +60,9 @@ describe('tests validating a value', () => {
 
   it('should result in a successfull validation', () => {
     const result = validate(21, testValidation);
-    const allInactiveWarnings = result.messages.every((w) => w.active === false);
+    const allInactiveWarnings = result.messages.every((message) => message.active === false);
     expect(result.messages).toHaveLength(2);
     expect(allInactiveWarnings).toBe(true);
-    expect(result.isValid).toBe(true);
-  });
-
-  it('should result in a successfull validation and produce non-active messages when the skipWarning is set', () => {
-    const evenValidation = createOptionalValidation([evenValidator]);
-    const result = validate(undefined, evenValidation);
-    expect(result.messages).toHaveLength(1);
-    expect(result.messages[0].message).toBe(evenMessage);
-    expect(result.messages[0].active).toBeUndefined();
     expect(result.isValid).toBe(true);
   });
 
@@ -55,15 +77,6 @@ describe('tests validating a value', () => {
     expect(result.isValid).toBe(false);
   });
 
-  it('should result in a failed validation and produce active messages when the skipWarning and value is set', () => {
-    const evenValidation = createOptionalValidation([evenValidator]);
-    const result = validate(5, evenValidation);
-    expect(result.messages).toHaveLength(1);
-    expect(result.messages[0].message).toBe(evenMessage);
-    expect(result.messages[0].active).toBe(true);
-    expect(result.isValid).toBe(false);
-  });
-
   it('should not try to validate an undefined value', () => {
     const evenValidation = createValidation([evenValidator]);
     const result = validate(undefined, evenValidation);
@@ -72,8 +85,8 @@ describe('tests validating a value', () => {
   });
 });
 
-describe('tests validating a value set', () => {
-  it('should return messages and isValid object keys', () => {
+describe('tests the toValidationResults', () => {
+  it('should validate plain objects', () => {
     const validators = {
       odd: createValidation([oddValidator]),
       even: createValidation([evenValidator]),
@@ -98,38 +111,6 @@ describe('tests validating a value set', () => {
     expect(result.fields.even).toHaveProperty('messages');
     expect(result.fields.gt10).toHaveProperty('isValid');
     expect(result.fields.gt10).toHaveProperty('messages');
-  });
-
-  it('should validate the whole object', () => {
-    const validators = {
-      odd: createValidation([oddValidator]),
-      even: createValidation([evenValidator]),
-      gt10: createValidation([gt10Validator]),
-      test: {
-        nested: createValidation([oddValidator]),
-      },
-    };
-    const values = {
-      odd: 3,
-      even: 4,
-      gt10: 25,
-      a: 2,
-      test: {
-        nested: 3,
-      },
-    };
-
-    const result = toValidationResult(values, validators);
-
-    expect(result).toBeInstanceOf(Object);
-    expect(result.isValid).toBe(true);
-    expect(result.messages).toHaveLength(4);
-    expect(result.fields.odd.isValid).toBe(true);
-    expect(result.fields.odd.messages).toHaveLength(1);
-    expect(result.fields.even.isValid).toBe(true);
-    expect(result.fields.even.messages).toHaveLength(1);
-    expect(result.fields.gt10.isValid).toBe(true);
-    expect(result.fields.gt10.messages).toHaveLength(1);
   });
 
   it('should validate nested objects', () => {

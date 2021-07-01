@@ -2,6 +2,7 @@ import { Value, NestedRecord, Validation, ValidationStructure } from './types';
 
 export const isNull = (item: unknown): boolean => item === null;
 export const isUndefined = (item: unknown): boolean => item === undefined;
+export const isEmpty = (item: unknown): boolean => item === '';
 export const isObject = (item: unknown): boolean => typeof item === 'object';
 
 export const isNestedValue = (item: Value | NestedRecord): item is NestedRecord => {
