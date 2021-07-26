@@ -9,10 +9,17 @@ describe('tests the composeOption(s) utility methods', () => {
     });
   });
 
-  it('Should build the correct pairs', () => {
+  it('Should build the multiple correct pairs', () => {
     expect(composeOptions({ label: 'value', label2: 'value2' })).toStrictEqual([
       { label: 'label', value: 'value' },
       { label: 'label2', value: 'value2' },
     ]);
+  });
+
+  it('Accepts the type number as value', () => {
+    expect(composeOption('label', 10)).toStrictEqual({
+      label: 'label',
+      value: 10,
+    });
   });
 });
