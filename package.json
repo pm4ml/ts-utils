@@ -1,13 +1,16 @@
 {
-  "name": "@modusbox/ts-utils",
-  "version": "0.0.5",
+  "name": "@pm4ml/ts-utils",
+  "version": "0.0.6",
   "main": "lib/index.js",
-  "license": "MIT",
+  "license": "Apache-2.0",
   "author": "Ivan Annovazzi <ivan@modusbox.com>",
   "types": "lib/index.d.ts",
   "files": [
     "lib/**/*"
   ],
+  "publishConfig": {
+    "access": "public"
+  },
   "dependencies": {
     "lodash": "^4.17.21"
   },

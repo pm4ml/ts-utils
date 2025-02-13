@@ -1,10 +1,10 @@
-# @modusbox/ts-utils
+# @pm4ml/ts-utils
 
 A collection of Typescript utilities for the frontend apps.
 
-To install the module run `yarn add @modusbox/ts-utils`.
+To install the module run `yarn add @pm4ml/ts-utils`.
 
-Documentation is available at [https://modusintegration.github.io/ts-utils](https://modusintegration.github.io/ts-utils)
+Documentation is available at [https://github.com/pm4ml/ts-utils](https://github.com/pm4ml/ts-utils)
 
 ### Development
 
